@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" tupe="css" href="reset.css">
+        <link rel="stylesheet" tupe="css" href="stylesheet.css">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Trackgenix SA</title>
     </head>
     <body>
-        <header>
-            <img src="Images/Logo.png" alt="Logo">
-            <input type="button" name="submit" value="Sign up">
+        <header id="header">
+            <img src="Images/Logo.png" alt="Logo" id="logo">
+            <input type="button" name="submit" value="Sign up" id="sign-up">
         </header>
-        <aside>
-            <nav>
-                <div>Shortcuts</div>
+        <aside id="aside">
+            <nav class="nav">
+                <div id="div1">Shortcuts</div>
                 <ul>
-                    <li><a href="#homepage">Homepage</a></li>
-                    <li><a href="#what-is-trackgenix">What is Trackgenix?</a></li>
-                    <li><a href="#what-can-i-do">Why choose Trackgenix?</a></li>
-                    <li><a href="#about-us">About us</a></li>
-                    <li><a href="#get-in-touch">Get in touch</a></li>
-                    <li><a href="#">Log in</a></li>
+                    <li><a href="#homepage"  class="links">Homepage</a></li>
+                    <li><a href="#what-is-trackgenix"  class="links">What is Trackgenix?</a></li>
+                    <li><a href="#what-can-i-do"  class="links">Why choose Trackgenix?</a></li>
+                    <li><a href="#about-us"  class="links">About us</a></li>
+                    <li><a href="#get-in-touch"  class="links">Get in touch</a></li>
+                    <li><a href="#"  class="links">Log in</a></li>
                 </ul>
             </nav>
         </aside>
-        <main id="homepage">
-                <img src="Images/0-Landing.png" alt="background">
+        <main id="landing">
+            <section class="principal">
+                <img id="fondo-landing" src="Images/0-Landing.png" alt="background" display="none">
                 <h1>Trackgenix SA</h1>
                 <img src="Images/Logo.png" alt="Trackgenix Logo">
-            
+            </section>
             <section id="what-is-trackgenix">
                 <h2>Hi, I’m Trackgenix 
                     by Baltazar’s Team
@@ -49,46 +52,46 @@
                 <img src="Images/2-Section1.png" alt="notebook">
             </section>
             <section id="what-can-i-do">
-                <h3>What can I do & why choose me? </h3>
+                <h2>What can I do & why choose me? </h2>
                 <img src="Images/3-Section2 1.png" alt="shield">
-                <h4>Decision Making</h4>
+                <h3>Decision Making</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
                 <img src="Images/3-Section2 2.png" alt="network">
-                <h4>Resource Management</h4>
+                <h3>Resource Management</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
                 <img src="Images/3-Section2 3.png" alt="bar graph">
-                <h4>Reports and Traceability</h4>
+                <h3>Reports and Traceability</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
                 <img src="Images/3-Section2 4.png" alt="phone operator">
-                <h4>Leadership</h4>
+                <h3>Leadership</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
                 <img src="Images/3-Section2 5.png" alt="paper plane">
-                <h4>Productivity Booster</h4>
+                <h3>Productivity Booster</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
                 <img src="Images/3-Section2 6.png" alt="clock">
-                <h4>Hours Log</h4>
+                <h3>Hours Log</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
             </section>
             <section id="about-us">
-                <h3>About us</h3>
+                <h2>About us</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua
@@ -117,17 +120,17 @@
                 </p>
             </section>
             <section id="get-in-touch">
-                <h3>Contact us</h3>
+                <h2>Contact us</h2>
                 <form>
-                    <div>
+                    <div class="container">
                         <label for="username">Username</label>
                         <input type="text" id="username" name="username" placeholder="Click on me to write">
                     </div>
-                    <div>
+                    <div class="container">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" placeholder="Click on me to write">
                     </div>
-                    <div>
+                    <div class="container">
                         <label for="sector">Sector</label>
                         <select name="Sector" id="sector" placeholder="Choose one">
                             <option value="Choose one" placeholder="Choose one" selected="true" disabled>Choose one</option>
@@ -136,18 +139,18 @@
                             <option value="commercialization">COMMERCIALIZATION</option>
                         </select>
                     </div>
-                    <div>
+                    <div class="container">
                         <label for="phonenumber">PhoneNumber (Optional)</label>
                         <input type="text" id="phonenumber" name="PhoneNumber (Optional)" placeholder="Click on me to write">
                     </div>
-                    <div>
+                    <div class="container">
                         <label for="message">Message</label>
                         <textarea name="message" id="message" placeholder="Click on me to write"></textarea>
                     </div>
                     <input type="submit" value="Submit">
                 </form>
                 <img src="Images/5-Section4 1.png" alt="house">
-                <address>
+                <address class="main-address">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </address>
@@ -163,7 +166,7 @@
                     eiusmod_tempor@incididunt.ut
                     labore-et-dolore@magna.aliqua
                 </p>
-                <h5>Products</h5>
+                <h4>Products</h4>
                 <ol>
                     <li><a href="#"
                         target="_blank">Features</a></li>
@@ -174,7 +177,7 @@
                     <li><a href="#"
                         target="_blank">Additional features</a></li>
                 </ol>
-                <h5>Business</h5>
+                <h4>Business</h4>
                 <ol>
                     <li><a href="#"
                         target="_blank">About us</a></li>
@@ -185,7 +188,7 @@
                     <li><a href="#"
                         target="_blank">Blog</a></li>
                 </ol>
-                <h5>Support</h5>
+                <h4>Support</h4>
                 <ol>
                     <li><a href="#"
                         target="_blank">Help</a></li>
@@ -198,7 +201,7 @@
                 </ol>
             </section>
         </main>
-        <footer>
+        <footer class="footer">
             <ol>
                 <ul><a href="https://www.linkedin.com/"><img src="Images/Footer 1.png" alt="Linkedin"></a></ul>
                 <ul><a href="https://www.twitter.com/"><img src="Images/Footer 2.png" alt="Twitter"></a></ul>
@@ -206,8 +209,8 @@
                 <ul><a href="https://www.instagram.com/"><img src="Images/Footer 4.png" alt="Instagram"></a></ul>
                 <ul><a href="https://github.com/"><img src="Images/Footer 5.png" alt="Github"></a></ul>
             </ol>
-            <address>Rosario, Argentina</address>
-            <p>Copyright © 2022 Trackgenix S.A. All rights reserved.</p>
+            <address class="footer-address">Rosario, Argentina</address>
+            <p id="copyright">Copyright &copy; 2022 Trackgenix S.A. All rights reserved.</p>
         </footer>
     </body>
 </html>

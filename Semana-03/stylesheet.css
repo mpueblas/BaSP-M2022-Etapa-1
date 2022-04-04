@@ -1,0 +1,98 @@
+font-face{
+    font-family: "roboto";
+    src: url("/images/fonts/Roboto-Regular");
+    font-style: normal;
+    font-weight: normal;
+}
+h1{
+    font-size: 40px;
+    color:#fff;
+    margin-top: 224px;
+    margin-left: 750px;
+
+}
+body{
+    background-color:#FFF;
+    color:#373867;
+    font-family:"roboto",helvetica,sans-serif;
+    font-size: 20px;
+    line-height:normal;
+    margin: 0;
+}
+
+#header{
+    position:fixed;
+    background-color:#373867;
+    display:block;
+    width:100%;
+    height:91px;
+
+    }
+#logo{
+    position:absolute;
+    right: 50%;
+    top: 15px;
+    width:45px;
+    height:61px;
+
+}
+#sign-up{
+    position: absolute;
+    right: 3%;
+    top:25%;
+    font-weight: bold;
+    font-size:12px;
+    line-height: 14px;
+    background-color:#AACE9B;
+    border:none;
+    border-radius: 7px;
+    padding:13px;
+}
+
+#aside{
+    position:fixed;
+    top:91px;
+    width:308px;
+    height:832px;
+    padding-top: 69.52px;
+    font-weight:bold;
+
+    background-color:#AACE9B;
+    border:10px;
+    text-align: left;
+    
+}    
+
+#div1{
+    margin-left:32px;
+    font-size: 30px;
+    padding-bottom: 49.6px;
+    padding-right: 122px;
+}
+
+
+.links{
+    margin-left:32px;
+    color:black;
+    text-decoration: none;
+    font-weight: lighter;
+    background-color:#FFF;
+    border-style: solid;
+    border-bottom:#373867;
+    background-size: 241px 36px;
+    line-height:36px;   
+}
+
+#landing{
+    width: 1140;
+    height: 835;
+    margin-left: 300px;
+}
+
+
+}
+}
+
+#fondo-landing{
+
+}

@@ -12,6 +12,7 @@ h1{
     margin:auto;
 
     }
+
 body{
     background-color:#FFF;
     color:#373867;
@@ -121,16 +122,107 @@ body{
     width:40%;
     height: 100%;
 }
+
 #what-is-trackgenix{
-    display:inline-block;
-    }
+    display: inline-block;
+    position: relative;
+    width: 69%;
+    padding-top: 15%;
+    padding-bottom: 80%;
+    
+    
+}
+.s1p1{
+    display: inline-block;
+    position:absolute;
+    width: 47%;
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    margin-left: 10%;
+    padding-top: 5%;
+}
+
+
+.s1p2{
+    display: inline-block;
+    position: absolute;
+    width: 62%;
+    right: -32%;
+    top: 14%;
+}
+
 
 .section-title{
     font-weight:700;
     font-size: 40px;
     display:flex;
     text-align: left;
+    margin-top: -35%;
+    margin-bottom: 10%
     
+}
+.section-subtitle{
+    margin: 0;
+    margin-bottom: 0px;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    vertical-align: baseline;
+    margin-bottom: 12%;
+    font-weight: 700;
+    font-size: 30px;
+    color: #373867B2;
+    width: 352px;
+    height: 109px;
+    line-height: 37px;
+}
+
+#what-can-i-do{
+    display: inline-block;
+    position: relative;
+    width: 69%;
+    padding-top: 15%;
+    padding-bottom: 80%;
+
+}
+#s2-title{
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+
+
+}
+#s2-container{
+    display: inline-block;
+    padding-left: 4%;
+    width:135%;
+    padding-top: 10%;
+}
+.s2-a{
+    display: inline-block;
+    width: 504px;
+    height: 126px;
+    margin-bottom: 100px;
+
+}
+
+.s2-img{
+    display:inline-block;
+    width:100px;
+    height:100px;
+
+}
+.s2-div{
+    display: inline-block;
+    width: 326px;
+    height: 126px;
+    text-align: left;
 }
 .footer{
     position:fixed;

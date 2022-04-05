@@ -1,16 +1,16 @@
 font-face{
     font-family: "roboto";
-    src: url("/images/fonts/Roboto-Regular");
+    src: url(/images/fonts/Roboto-Regular);
     font-style: normal;
     font-weight: normal;
-}
+    }
 h1{
     font-size: 40px;
     color:#fff;
-    margin-top: 224px;
-    margin-left: 750px;
+    display: inline-block;
+    margin:auto;
 
-}
+    }
 body{
     background-color:#FFF;
     color:#373867;
@@ -18,10 +18,11 @@ body{
     font-size: 20px;
     line-height:normal;
     margin: 0;
-}
+    }
 
 #header{
     position:fixed;
+    top:0px;
     background-color:#373867;
     display:block;
     width:100%;
@@ -30,12 +31,12 @@ body{
     }
 #logo{
     position:absolute;
-    right: 50%;
+    right: 48%;
     top: 15px;
-    width:45px;
-    height:61px;
+    height:60px;
+    width: 60px;
 
-}
+    }
 #sign-up{
     position: absolute;
     right: 3%;
@@ -47,7 +48,7 @@ body{
     border:none;
     border-radius: 7px;
     padding:13px;
-}
+    }
 
 #aside{
     position:fixed;
@@ -56,23 +57,28 @@ body{
     height:832px;
     padding-top: 69.52px;
     font-weight:bold;
-
     background-color:#AACE9B;
     border:10px;
     text-align: left;
     
-}    
+    }    
 
-#div1{
+#shortcuts{
     margin-left:32px;
-    font-size: 30px;
-    padding-bottom: 49.6px;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    font-size: 38px;
+    padding-bottom: 10%;
     padding-right: 122px;
-}
+    text-align:left;
+    box-shadow: 0px 6px #373867;
+    
+    }
 
 
-.links{
+.nav-links{
     margin-left:32px;
+    margin-right: 10%;
     color:black;
     text-decoration: none;
     font-weight: lighter;
@@ -80,16 +86,73 @@ body{
     border-style: solid;
     border-bottom:#373867;
     background-size: 241px 36px;
-    line-height:36px;   
+    line-height:36px; 
+    margin-bottom: 8%;  
+    box-shadow:0px 3px #373867;
+    }
+
+.nav-titles{
+    color:black;
+    text-decoration: none;
+    font-weight: lighter;
 }
 
 #landing{
-    width: 1140;
-    height: 835;
-    margin-left: 300px;
+    align-content:center; 
+    margin-right: 0;
+    margin-left: 308px;
+    margin-top:0;
+
+    }
+
+.principal{
+    padding-top: 257px;
+    padding-bottom: 221px;
+    text-align: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-image: url(../Semana-03/Images/background-img.jpg);
+    background-size: cover;
+    }
+#logo-home{
+    display: block;
+    margin: 0 auto;
+    width:auto;
+    height: 100%;
 }
 
+.footer{
+    position:fixed;
+    display:inline-block;
+    text-align: center;
+    bottom:0px;
+    background-color:#373867;
+    display:block;
+    width:100%;
+    height:91px;
+    
+}
+
+.iconos-footer{
+    display:inline-block;
+    width: 75px;
+    padding-top: 0.3%;
+}
+
+.footer-address{
+    position:relative;
+    display:inline-block;
+    bottom: 11%;
+    left:11%;
+    color:#AACE9B;
+    font-size: small;
+}
+.copyright{
+    position:relative;
+    display:inline-block;
+    bottom: -4%;
+    right:3%;
+    color: #AACE9B;
+    font-size: small;
 
 }
-}
-

@@ -1,12 +1,13 @@
 font-face{
-    font-family: "roboto";
-    src: url(/images/fonts/Roboto-Regular);
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     }
 h1{
     font-size: 40px;
     color:#fff;
+    font-weight: bolder;
+    text-transform: uppercase;
     display: inline-block;
     margin:auto;
 
@@ -14,7 +15,7 @@ h1{
 body{
     background-color:#FFF;
     color:#373867;
-    font-family:"roboto",helvetica,sans-serif;
+    font-family:'Roboto', sans-serif;
     font-size: 20px;
     line-height:normal;
     margin: 0;
@@ -57,6 +58,7 @@ body{
     height:832px;
     padding-top: 69.52px;
     font-weight:bold;
+    color: #373867;
     background-color:#AACE9B;
     border:10px;
     text-align: left;
@@ -79,8 +81,7 @@ body{
 .nav-links{
     margin-left:32px;
     margin-right: 10%;
-    color:black;
-    text-decoration: none;
+    
     font-weight: lighter;
     background-color:#FFF;
     border-style: solid;
@@ -92,7 +93,7 @@ body{
     }
 
 .nav-titles{
-    color:black;
+    color: #373867;;
     text-decoration: none;
     font-weight: lighter;
 }
@@ -117,10 +118,20 @@ body{
 #logo-home{
     display: block;
     margin: 0 auto;
-    width:auto;
+    width:40%;
     height: 100%;
 }
+#what-is-trackgenix{
+    display:inline-block;
+    }
 
+.section-title{
+    font-weight:700;
+    font-size: 40px;
+    display:flex;
+    text-align: left;
+    
+}
 .footer{
     position:fixed;
     display:inline-block;

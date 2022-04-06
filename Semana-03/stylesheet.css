@@ -129,7 +129,7 @@ body{
     position: relative;
     width: 69%;
     padding-top: 15%;
-    padding-bottom: 80%;
+    padding-bottom: 52%;
     
     
 }
@@ -144,6 +144,13 @@ body{
     padding-top: 5%;
 }
 
+.p1{
+
+}
+.p2{
+    padding-top: 10%;
+
+}
 
 .s1p2{
     display: inline-block;
@@ -183,12 +190,20 @@ body{
     line-height: 37px;
 }
 
+.green-bar{
+    width: 1140px;
+    height: 60px;
+    left: 300px;
+    top: 3592px;
+    background-color:#49A37B;
+    margin-top: 10%;
+}
+
 #what-can-i-do{
     display: inline-block;
     position: relative;
     width: 69%;
     padding-top: 15%;
-    padding-bottom: 80%;
     padding-left: 7%;
 
 }
@@ -231,9 +246,9 @@ body{
     display: inline-block;
     position: relative;
     width: 90%;
-    padding-top: 15%;
-    padding-bottom: 80%;
+    padding-bottom: 11%;
     padding-left: 6%;
+    margin-top:6%;
 
 }
 
@@ -251,7 +266,7 @@ body{
     padding-top: 6%;
 }
 
-.p1{
+.pp1{
     display: inline-block;
     width: 609px;
     height: 250px;
@@ -276,7 +291,7 @@ body{
 
 }
 
-.p2{
+.pp2{
     display: inline-block;
     width: 609px;
     height: 250px;
@@ -285,6 +300,144 @@ body{
     line-height: 24px;
     padding-right: 4%;
     text-align: right;
+}
+
+.s4-container{
+    display: inline-block;
+    width: 1118px;
+    height: 250px;
+    margin-left: 0%;
+}
+.form{
+    display: inline-block;
+    width: 260px;
+    padding-top: 26px;
+    padding-left: 14%;
+
+}
+
+form input{
+    display:block;
+    width: 100%;
+    height:37px;
+    top:23px;
+    border: 1px solid #373867;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+} 
+form select{
+    display:block;
+    width: 100%;
+    height: 37px;
+    top: 23px;
+    border: 1px solid #373867;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+} 
+form textarea{
+    display:block;
+    width: 100%;
+    height: 138px;
+    top: 360px;
+    order: 4;
+    border: 1px solid #373867;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+} 
+
+form label{
+    right:60%;
+    bottom: 74%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+}
+
+
+}
+.contact{
+    display: inline-block;
+    width: 426px;
+    padding-left: 17%;
+}
+
+.s4-c{
+    display:block;
+    width: 448px;
+    height: 92px;
+    margin-bottom: 27%;
+}
+
+.s4-img{
+    display:inline-block;
+    width:80px;
+    height: 80px;
+    margin-right: 8%;
+
+}
+.s4-text{
+    display:inline-block;
+    width:323px ;
+    height: 92px;
+
+}
+.s5{
+    display:block;
+    margin-top:39px;
+    margin-bottom: 10%;
+    margin-left: 11%;
+    width:100%;
+}
+
+.s5-c1{
+    display:inline-block;
+    width: 33%;
+}
+.s5-c2{
+    display:inline-block;
+    width: 33%;
+}
+.s5-c3{
+    display:inline-block;
+    width: 33%;
+}
+h4{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #373867;
+}
+
+.s5 a{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #373867;
+    text-decoration: none;
+}
+
+.s5 ol{
+    margin-left: 10%;
+    margin-top: 3%;
 }
 .footer{
     position:fixed;

@@ -10,4 +10,7 @@ We wrote the html code for the landing page of Trackgenix. With non css design c
 ## WEEK 03
 We wrote the Css code giving the visual style to the page. We don`t use any flexbox code, just pure Css.
 ````
+## WEEK 04
+We re-wrote the Css code using Flex-box and some Media-queries to make an responsive page. We take four different screen sizes to design the layouts. 
+````
 ## Martín Pueblas

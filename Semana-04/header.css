@@ -1,0 +1,13 @@
+#header{
+    height:91px;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content:center;
+    background-color: aqua;
+}
+
+header img, input{
+    flex: 1 1 10%
+}

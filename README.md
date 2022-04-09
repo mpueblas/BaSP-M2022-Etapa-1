@@ -3,6 +3,7 @@
 ## Instructions
 ```
 To launch the web system you just have to double click on Index.html, sourced in the BaSP M2022 folder.
+Or you can follow this GitHub link to watch the working progress: https://mpueblas.github.io/BaSP-M2022-Etapa-1/Semana-04/
 ```
 ## WEEK 02
 We wrote the html code for the landing page of Trackgenix. With non css design code, just the semantics for the estructure.

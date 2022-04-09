@@ -1,0 +1,15 @@
+main{
+    padding-top: 91px;
+    margin-bottom: 104px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.homepage{
+    display:flex;
+    height: 150%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../Semana-04/Images/background-img.jpg);
+
+}

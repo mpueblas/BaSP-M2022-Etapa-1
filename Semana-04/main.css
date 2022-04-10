@@ -1,15 +1,106 @@
 main{
     padding-top: 91px;
-    margin-bottom: 104px;
+    padding-bottom: 104px;
     display:flex;
-    justify-content: center;
     flex-direction: column;
+    width:100%
 }
 .homepage{
     display:flex;
-    height: 150%;
+    flex-direction: column;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../Semana-04/Images/background-img.jpg);
+    align-items: center;
+
+}
+.homepage img{
+    width:50%;
+    height: auto;
+}
+.what-is-trackgenix{
+    margin-top: 5%;
+    padding: 5%;
+    display:flex;
+    flex-direction: column;
+    border-bottom: 60px solid #49A37B;
+    border-width: 60px;
+
+}
+
+.what-is-trackgenix img{
+    width: 70%;
+    align-self: center;
+}
+
+.what-can-i-do{
+    margin-top: 5%;
+    padding: 5%;
+    display:flex;
+    flex-direction: column;
+    border-bottom: 60px solid #49A37B;
+    border-width: 60px;
+}
+
+.img-text{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+    margin-top: 16%;
+}
+
+.img-text img{
+    width:30%;
+}
+
+.text-section3{
+    width: 65%;
+}
+
+.about-us{
+    margin-top: 5%;
+    padding: 5%;
+    display:flex;
+    flex-direction: column;
+    border-bottom: 60px solid #49A37B;
+    border-width: 60px;
+    width:90%;
+}
+.img-text-aboutus{
+    display:flex;
+    flex-direction: column;
+    width: 94%;
+    align-self: center;
+}
+
+.about-us p, img{
+    text-align: center;
+    justify-content: center;
+}
+
+.text1-section4{
+    margin-top:16%;
+    margin-bottom: 16%;
+}
+
+.text2-section4{
+    text-align: right;
+    margin-top:16%;
+    margin-bottom: 16%;
+    align-self: flex-end;
+}
+
+.get-in-touch{
+    margin-top: 5%;
+    padding: 5%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 60px solid #49A37B;
+    border-width: 60px;
+    width:90%;
 
 }

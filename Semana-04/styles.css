@@ -1,3 +1,45 @@
+font-face{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    }
+h1{
+    font-size: 40px;
+    color:#fff;
+    font-weight: bolder;
+    text-transform: uppercase;
+    display: inline-block;
+    margin:auto;
+
+    }
+h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 40px;
+    line-height: 47px;
+    align-self: center;
+    text-align: center;
+    }
+.subtittle{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #373867B2;
+}
+
+.section1-text{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    align-self: center;
+    text-align: center;
+    margin: 6%;
+}
+    
 body{
     display: flex;        
     background-color:#FFF;
@@ -6,5 +48,86 @@ body{
     line-height:normal;
     margin: 0;
     }
+
+h3{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    align-self: center;
+    text-align: center;
+    color: #373867;
+
+}
+
+h4{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #373867;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+
+
+
+}
+
+form input{
+    align-self: center;
+    width: 70%;
+    height:37px;
+    top:23px;
+    border: 1px solid #373867;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+} 
+form select{
+    align-self: center;
+    width: 70%;
+    height: 37px;
+    top: 23px;
+    border: 1px solid #373867;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+} 
+form textarea{
+    align-self: center;
+    width: 70%;
+    height: 138px;
+    top: 360px;
+    order: 4;
+    border: 1px solid #373867;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+} 
+
+form label{
+    align-self: center;
+    right:60%;
+    bottom: 74%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
 
 }

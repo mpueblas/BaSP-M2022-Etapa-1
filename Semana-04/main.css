@@ -13,11 +13,15 @@ main{
     background-size: cover;
     background-image: url(../Semana-04/Images/background-img.jpg);
     align-items: center;
+    height: 79vh;
+    padding-bottom: 40%;
 
 }
 .homepage img{
-    width:50%;
+    width:72%;
     height: auto;
+    margin: 10%;
+    
 }
 .what-is-trackgenix{
     margin-top: 5%;
@@ -76,8 +80,8 @@ main{
     align-self: center;
 }
 
-.about-us p, img{
-    text-align: center;
+.about-us img{
+    text-align: left;
     justify-content: center;
 }
 
@@ -98,9 +102,80 @@ main{
     padding: 5%;
     display:flex;
     flex-direction: column;
-    align-items: center;
     border-bottom: 60px solid #49A37B;
     border-width: 60px;
     width:90%;
+}
 
+.container-section5{
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    align-self:left;
+}
+
+.container-section5 input, select, textarea, button{
+    width: 85%;
+    height: 37px;
+    font-family:'Roboto', sans-serif;
+    line-height:normal;
+}
+
+.container-section5 select{
+    width:85%
+}
+
+.container-section5 textarea{
+    width: 85%;
+}
+
+.container-section5 label{
+    align-self: left;
+}
+
+#message, #phonenumber{
+    font-family:'Roboto', sans-serif;
+    line-height:normal;
+}
+#buttom-submit{
+    background-color: #AACE9B;
+    color: #373867;
+    font-weight: bold;
+
+}
+
+
+.address-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.address-container img{
+    margin: 5%;
+}
+
+.address-text{
+    margin: 5%;
+}
+
+.end{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #373867;
+}
+.end-container{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+.end-container ul{
+    list-style-type: circle;
 }

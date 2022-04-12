@@ -4,11 +4,12 @@ main{
     display:flex;
     flex-direction: column;
     width:100%
+
 }
 .homepage{
     display:flex;
     flex-direction: column;
-    width: 100%;
+    width: 100%; 
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../Semana-04/Images/background-img.jpg);
@@ -18,9 +19,10 @@ main{
 
 }
 .homepage img{
-    width:72%;
+    width:40%;
     height: auto;
     margin: 10%;
+    max-width: 450px 520px;
     
 }
 .what-is-trackgenix{
@@ -148,7 +150,7 @@ main{
 .address-container{
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+
 
 }
 
@@ -178,4 +180,124 @@ main{
 
 .end-container ul{
     list-style-type: circle;
+}
+
+
+
+@media (min-width: 480px) {
+    .what-is-trackgenix{
+        display:flex;
+        flex-direction: row;
+        margin-top: 5%;
+        padding: 5%;
+        border-bottom: 60px solid #49A37B;
+        border-width: 60px;
+    }
+    .container1{
+        width: 94%;
+        align-self: center;  
+    }
+    .container2{
+        width: 57%;   
+        margin:5%;
+    }
+
+    .what-can-container{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .img-text{
+        width: 35%;
+        align-self:center;
+        flex-basis: 45%;
+    }
+       
+ 
+    .img-text-aboutus{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top:3%;
+    }
+    
+    .about-us p{
+        width: 52%;
+        height: auto;
+        align-self: stretch;
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+    .about-us img{
+        width:100%;
+        height: auto;
+        flex-basis: 45%;
+        align-self: center;
+    
+    }
+    .text1-section4{
+        order: 1;
+    }
+
+    .img1-section4{
+        order:2;
+    }
+    .text2-section4{
+        order: 4;
+    }
+
+    .img2-section4{
+        order: 3;
+    }
+    .get-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .get-container form{
+        width: 45%;
+    }
+
+    .address{
+        display:flex;
+        flex-direction: column;
+        width: 45%;
+        justify-content: space-around;
+    }
+    .end{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 5% 0;
+    }
+    .end-container{
+        width: 17%;
+        align-self: baseline;
+
+    }
+}   
+
+@media (min-width: 768px) {
+    #aside{
+        display:inline-block;
+        z-index: 100;
+        position:fixed;
+        top:91px;
+        width:308px;
+        height:100%;
+        padding-top: 69.52px;
+        font-weight:bold;
+        color: #373867;
+        background-color:#AACE9B;
+        border:10px;
+        text-align: left;
+}
+    #main{
+        padding-left: 300px;
+    }
+
+ 
 }

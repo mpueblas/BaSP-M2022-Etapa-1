@@ -10,28 +10,25 @@ header{
     background-color: #373867;
     z-index: 100;
 }
-
 .img-menu-header{
     display:flex;
     align-self: center;
     height:45%;
 }
-
 .img-logo-header{
     display:flex;
     align-self: center;
     height:80%
 }
-
 .sign-up-button{
     display:flex;
-    font-weight: bold;
-    font-size:12px;
+    font-weight:normal;
+    font-size:14px;
     line-height: 14px;
     background-color:#AACE9B;
     border:none;
     border-radius: 7px;
     width: 15%;
     height: 42%;
-
+    font-family: 'Roboto', sans-serif;
 }

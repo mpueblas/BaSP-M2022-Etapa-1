@@ -7,8 +7,7 @@ h1{
     display: inline-block;
     margin:auto;
     margin: 5% 0;
-
-    }
+}
 h2{
     font-family: 'Roboto';
     font-style: normal;
@@ -17,27 +16,10 @@ h2{
     line-height: 47px;
     align-self: center;
     text-align: center;
-    }
-.subtittle{
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 35px;
-    margin: 6%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #373867B2;
 }
-
-.section1-text{
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    align-self: center;
-    text-align: center;
-    margin: 4%;
-}
-    
+img{
+    height: auto;
+}    
 body{
     display: flex;        
     background-color:#FFF;
@@ -45,8 +27,7 @@ body{
     font-family:'Roboto', sans-serif;
     line-height:normal;
     margin: 0;
-    }
-
+}
 h3{
     font-weight: 700;
     font-size: 40px;
@@ -54,9 +35,7 @@ h3{
     align-self: center;
     text-align: center;
     color: #373867;
-
 }
-
 h4{
     font-weight: 700;
     font-size: 22px;
@@ -65,16 +44,6 @@ h4{
     align-items: center;
     color: #373867;
 }
-
-.form{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-
-
-
-}
-
 form input{
     display: flex;
     align-self: center;
@@ -88,8 +57,6 @@ form input{
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    
-
 } 
 form select{
     align-self: center;
@@ -103,7 +70,6 @@ form select{
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-
 } 
 form textarea{
     align-self: center;
@@ -118,9 +84,7 @@ form textarea{
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-
 } 
-
 form label{
     align-self: left;
     font-style: normal;
@@ -128,39 +92,43 @@ form label{
     font-size: 14px;
     line-height: 16px;
     padding-left: 7%;
-
 }
-
 h5{
     font-weight: 700;
     font-size: 30px;
     line-height: 35px;
     color: #373867;
 }
-
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.subtittle{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    margin: 6%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #373867B2;
+}
+.section1-text{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    align-self: center;
+    text-align: center;
+    margin: 4%;
+}
 .link{
     text-decoration: none;
     color:#373867;
 }
-
-
-#shortcuts{
-    margin-left:32px;
-    margin-right: 5%;
-    margin-bottom: 10%;
-    font-size: 38px;
-    padding-bottom: 10%;
-    padding-right: 122px;
-    text-align:left;
-    box-shadow: 0px 6px #373867;
-    
-    }
-
-
 .nav-links{
     margin-left:32px;
-    margin-right: 10%;
-    
+    margin-right: 10%;   
     font-weight: lighter;
     background-color:#FFF;
     border-style: solid;
@@ -169,9 +137,19 @@ h5{
     line-height:36px; 
     margin-bottom: 8%;  
     box-shadow:0px 3px #373867;
-    }
-
+}
 .nav-titles{
     color: #373867;;
     text-decoration: none;
     font-weight: lighter;
+}
+#shortcuts{
+    margin-left:32px;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    font-size: 38px;
+    padding-bottom: 10%;
+    padding-right: 122px;
+    text-align:left;
+    box-shadow: 0px 6px #373867;    
+}

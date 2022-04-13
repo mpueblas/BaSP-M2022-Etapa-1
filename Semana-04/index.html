@@ -1,264 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" tupe="css" href="reset.css">
-        <link rel="stylesheet" tupe="css" href="stylesheet.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>trackgenix sa</title>
+        <title>Trackgenix SA</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="header.css">
+        <link rel="stylesheet" type="text/css" href="sidebar.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="footer.css">
     </head>
     <body>
         <header id="header">
-            <img src="Images/Logo.png" alt="Logo" id="logo">
-            <input type="button" name="submit" value="Sign up" id="sign-up">
+            <img class="img-menu-header" src="Images/burguer-menu.png">
+            <img class="img-logo-header" src="Images/Logo.png">
+            <input class="sign-up-button" type="button" name="submit" value="Sign up">
         </header>
         <aside id="aside">
-            <nav class="nav">
+            <nav>
                 <div id="shortcuts">Shortcuts</div>
-                <ul class="lista">
-                    <li class="nav-links"><a href="#homepage" class="nav-titles">Homepage</a></li>
-                    <li class="nav-links"><a href="#what-is-trackgenix" class="nav-titles">What is Trackgenix?</a></li>
-                    <li class="nav-links"><a href="#what-can-i-do" class="nav-titles">Why choose Trackgenix?</a></li>
-                    <li class="nav-links"><a href="#about-us" class="nav-titles">About us</a></li>
-                    <li class="nav-links"><a href="#get-in-touch" class="nav-titles">Get in touch</a></li>
-                    <li class="nav-links"><a href="#" class="nav-titles">Log in</a></li>
+                <ul>
+                    <li class="nav-links"><a class="nav-titles" href="#homepage">Homepage</a></li>
+                    <li class="nav-links"><a class="nav-titles" href="#what-is-trackgenix">What is Trackgenix?</a></li>
+                    <li class="nav-links"><a class="nav-titles" href="#what-can-i-do">Why choose Trackgenix?</a></li>
+                    <li class="nav-links"><a class="nav-titles" href="#about-us">About us</a></li>
+                    <li class="nav-links"><a class="nav-titles" href="#get-in-touch">Get in touch</a></li>
+                    <li class="nav-links"><a class="nav-titles" href="#">Log in</a></li>
                 </ul>
             </nav>
         </aside>
-        <main id="landing">
-            <section class="principal" id="homepage">
+        <main id="main">
+            <section class="homepage" id="homepage">
                 <h1>Trackgenix SA</h1>
-                <img src="Images/Logo.png" alt="Trackgenix Logo" id="logo-home">
+                <img src="Images/Logo.png">
             </section>
-            <section id="what-is-trackgenix">
-                <div class="s1p1">
-                    <h2 class="section-title">Hi, I’m Trackgenix 
+            <section class="what-is-trackgenix" id="what-is-trackgenix">
+                <div class="container1">
+                    <h2>Hi, I’m Trackgenix 
                         by Baltazar’s Team
                     </h2>
-                    <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                    <p class="p1">
+                    <p class="subtittle">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <p class="section1-text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit
                         amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua.
                     </p>
-                    <p class="p2">
+                    <p class="section1-text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit
                         amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua.
                     </p>
                 </div>
-                <img class="s1p2" src="Images/2-Section1.png" alt="notebook">
+                <img class="container2" src="Images/2-Section1.png">
             </section>
-            <section class="green-bar">   
-            </section>
-            <section id="what-can-i-do">
-                <h2 class="s-title">What can I do & why choose me? </h2>
-                <div id="s2-container">        
-                    <article class="s2-a">
-                        <img class="s2-img" src="Images/3-Section2 1.png" alt="shield">
-                        <div class="s2-div">
-                            <h3>Decision Making</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </p>
-                        </div>
-                    </article>
-                    <article class="s2-a">
-                        <img class="s2-img" src="Images/3-Section2 2.png" alt="network">
-                            <div class="s2-div">
-                                <h3>Resource Management</h3>
+            <section class="what-can-i-do" id="what-can-i-do">
+                <h3>What can I do & why choose me? </h3>
+                    <div class="what-can-container">
+                        <div class="img-text">
+                            <img src="Images/3-Section2 1.png">
+                            <div class="text-section3">
+                                <h4>Decision Making</h4>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                                     eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 </p>
                             </div>
-                    </article>
-                    <article class="s2-a">
-                        <img class="s2-img" src="Images/3-Section2 3.png" alt="bar graph">
-                        <div class="s2-div">
-                            <h3>Reports and Traceability</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </p>
                         </div>
-                    </article>
-                    <article class="s2-a">
-                        <img class="s2-img" src="Images/3-Section2 4.png" alt="phone operator">
-                        <div class="s2-div">
-                            <h3>Leadership</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </p>
+                        <div class="img-text">
+                            <img src="Images/3-Section2 2.png">
+                            <div class="text-section3">
+                                <h4>Resource Management</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
                         </div>
-                    </article>
-                    <article class="s2-a">
-                        <img class="s2-img" src="Images/3-Section2 5.png" alt="paper plane">
-                        <div class="s2-div">
-                            <h3>Productivity Booster</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </p>
+                        <div class="img-text">
+                            <img src="Images/3-Section2 3.png">
+                            <div class="text-section3">
+                                <h4>Reports and Traceability</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
                         </div>
-                    </article>
-                    <article class="s2-a">
-                        <img class="s2-img" src="Images/3-Section2 6.png" alt="clock">
-                        <div class="s2-div">
-                            <h3>Hours Log</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </p>
+                        <div class="img-text">
+                            <img src="Images/3-Section2 4.png">
+                            <div class="text-section3">
+                                <h4>Leadership</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
                         </div>
-                    </article>
-                </div>    
-            </section>
-            <section class="green-bar">   
-            </section>
-            <section id="about-us">
-                <h2 class="s-title">About us</h2>
-                <div class="s3-a1">
-                    <p class="pp1">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua
-                        .Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                    <img class="img1" src="Images/4-section 3 1.jpg" alt="Trackgenix worker">
-                </div>
-                <div class="s3-a2">
-                    <img class="img2" src="Images/4-section 3 2.jpg" alt="team reunion">
-                    <p class="pp2">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua
-                        .Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                </div>
-            </section>
-            <section class="green-bar">   
-            </section>
-            <section id="get-in-touch">
-                <h2 class="s-title">Contact us</h2>
-                <div class="s4-container">
-                    <div class="form">
-                        <form>
-                            <div class="container">
-                                <label for="username">Username</label>
-                                <input type="text" id="username" name="username" placeholder="Click on me to write">
+                        <div class="img-text">
+                            <img src="Images/3-Section2 5.png">
+                            <div class="text-section3">
+                                <h4>Productivity Booster</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
                             </div>
-                            <div class="container">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="Click on me to write">
+                        </div>
+                        <div class="img-text">
+                            <img src="Images/3-Section2 6.png">
+                            <div class="text-section3">
+                                <h4>Hours Log</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
                             </div>
-                            <div class="container">
-                                <label for="sector">Sector</label>
-                                <select name="Sector" id="sector" placeholder="Choose one">
-                                    <option value="Choose one" placeholder="Choose one" selected="true" disabled>Choose one</option>
-                                    <option value="rr-hh">RR.HH.</option>
-                                    <option value="systems">SYSTEMS</option>
-                                    <option value="commercialization">COMMERCIALIZATION</option>
-                                </select>
-                            </div>
-                            <div class="container">
-                                <label for="phonenumber">PhoneNumber (Optional)</label>
-                                <input type="text" id="phonenumber" name="PhoneNumber (Optional)" placeholder="Click on me to write">
-                            </div>
-                            <div class="container">
-                                <label for="message">Message</label>
-                                <textarea name="message" id="message" placeholder="Click on me to write"></textarea>
-                            </div>
-                            <input type="submit" value="Submit" id="submit-buttom">
-                        </form>
+                        </div>
                     </div>
-                    <div class="contact">
-                        <div class="s4-c">
-                            <img class="s4-img" src="Images/5-Section4 1.png" alt="house">
-                            <address class="s4-text">
+                </div>
+            </section>
+            <section class="about-us" id="about-us">
+                <h3>About us</h3>
+                    <div class="img-text-aboutus">
+                        <p class="text1-section4">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua
+                            .Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <img class="img1-section4" src="Images/4-section 3 1.jpg">
+                        <p class="text2-section4">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua
+                            .Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <img class="img2-section4" src="Images/4-section 3 2.jpg">
+                    </div>
+            </section>
+            <section class="get-in-touch" id="get-in-touch">
+                <h3>Contact us</h3>
+                <div class="get-container">
+                    <form>
+                        <div class="container-section5">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username" placeholder="Click on me to write">
+                        </div>
+                        <div class="container-section5">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Click on me to write">
+                        </div>
+                        <div class="container-section5">
+                            <label for="sector">Sector</label>
+                            <select name="Sector" id="sector" placeholder="Choose one">
+                                <option value="Choose one" placeholder="Choose one" selected="true" disabled>Choose one</option>
+                                <option value="rr-hh">RR.HH.</option>
+                                <option value="systems">SYSTEMS</option>
+                                <option value="commercialization">COMMERCIALIZATION</option>
+                            </select>
+                        </div>
+                        <div class="container-section5">
+                            <label for="phonenumber">PhoneNumber (Optional)</label>
+                            <input type="text" id="phonenumber" name="PhoneNumber (Optional)" placeholder="Click on me to write">
+                        </div>
+                        <div class="container-section5">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" placeholder="Click on me to write"></textarea>
+                        </div>
+                        <input id="buttom-submit" class="container-section5" type="submit" value="Submit">
+                    </form>
+                    <div class="address">
+                        <div class="address-container">
+                            <img src="Images/5-Section4 1.svg">
+                            <address class="address-text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             </address>
                         </div>
-                        <div class="s4-c">
-                            <img class="s4-img" src="Images/5-Section4 2.png" alt="phone">
-                            <p class="s4-text">974040000/974040001/974040002
+                        <div class="address-container">
+                            <img src="Images/5-Section4 2.svg">
+                            <address class="address-text">974040000/974040001/974040002
                                 +99 9 999 999-9999
                                 +11 1 111 111-1111
-                            </p>
+                            </address>
                         </div>
-                        <div class="s4-c">
-                            <img class="s4-img" src="Images/5-Section4 3.png" alt="mail">
-                            <p class="s4-text">
-                                Lorem-ipsum@dolorsit.amet
-                                consecteturadipisicing@elit.seddo
-                                eiusmod_tempor@incididunt.ut
-                                labore-et-dolore@magna.aliqua
-                            </p>
-                        </div>
+                        <div class="address-container">
+                            <img src="Images/5-Section4 3.svg">
+                            <address class="address-text">
+                                Lorem-ipsum @dolorsit.amet
+                                consecteturadipisicing @elit.seddo
+                                eiusmod_tempor @incididunt.ut
+                                labore-et-dolore @magna.aliqua
+                            </address>
+                        </div class="address-container">
                     </div>
                 </div>
             </section>
-                <section class="s5">
-                    <div class="s5-c1">
-                        <h4>Products</h4>
-                        <ol>
-                            <li><a href="#" target="_blank">Features</a></li>
-                            <li><a href="#" target="_blank">Downloads</a></li>
-                            <li><a href="#" target="_blank">Intgrations</a></li>
-                            <li><a href="#" target="_blank">Additional features</a></li>
-                        </ol>
-                    </div>
-                    <div class="s5-c2">
-                        <h4>Business</h4>
-                        <ol>
-                            <li><a href="#" target="_blank">About us</a></li>
-                            <li><a href="#" target="_blank">Customers</a></li>
-                            <li><a href="#" target="_blank">Resources</a></li>
-                            <li><a href="#" target="_blank">Blog</a></li>
-                        </ol>
-                    </div>
-                    <div class="s5-c3">
-                        <h4>Support</h4>
-                        <ol>
-                            <li><a href="#" target="_blank">Help</a></li>
-                            <li><a href="#" target ="_blank">Tutorials</a></li>
-                            <li><a href="#" target="_blank">API</a></li>
-                            <li><a href="#" target="_blank">Contact</a></li>
-                        </ol>
-                    </div>
-                </section>      
+            <section class="end">    
+                <div class="end-container">
+                    <h5>Products</h5>
+                    <ol>
+                        <li><a class="link" href="#"
+                            target="_blank">Features</a></li>
+                        <li><a class="link" href="#"
+                            target="_blank">Downloads</a></li>
+                        <li><a class="link" href="#"
+                            target="_blank">Intgrations</a></li>
+                        <li><a class="link" href="#"
+                            target="_blank">Additional features</a></li>
+                    </ol>
+                </div>
+                <div class="end-container">
+                    <h5>Business</h5>
+                    <ol>
+                        <li><a class="link" href="#"
+                            target="_blank">About us</a></li>
+                        <li><a class="link" href="#"
+                            target="_blank">Customers</a></li>
+                        <li><a class="link" href="#"
+                            target="_blank">Resources</a></li>
+                        <li><a class="link" href="#"
+                            target="_blank">Blog</a></li>
+                    </ol>
+                </div>
+                <div class="end-container">
+                    <h5>Support</h5>
+                    <ol>
+                        <li><a class="link" href="#"
+                            target="_blank">Help</a></li>
+                        <li><a class="link" href="#"
+                            target ="_blank">Tutorials</a></li>
+                        <li><a class="link" href="#"
+                            target="_blank">API</a></li>
+                        <li><a class="link" href="#"
+                            target="_blank">Contact</a></li>
+                    </ol>
+                </div>
+            </section>
         </main>
-        <footer class="footer">
-            <ol class="lista-footer">
+        <footer id="footer">
+            <ul class="lista-footer">
                 <li class="iconos-footer"><a href="https://www.linkedin.com/"><img src="Images/Footer 1.png" alt="Linkedin"></a></li>
                 <li class="iconos-footer"><a href="https://www.twitter.com/"><img src="Images/Footer 2.png" alt="Twitter"></a></li>
                 <li class="iconos-footer"><a href="https://www.facebook.com//"><img src="Images/Footer 3.png" alt="Facebook"></a></li>
                 <li class="iconos-footer"><a href="https://www.instagram.com/"><img src="Images/Footer 4.png" alt="Instagram"></a></li>
                 <li class="iconos-footer"><a href="https://github.com/"><img src="Images/Footer 5.png" alt="Github"></a></li>
-            </ol>
-            <address class="footer-address">Rosario, Argentina</address>
-            <p class="copyright">Copyright &copy; 2022 Trackgenix S.A. All rights reserved.</p>
+            </ul>
+            <address>Rosario, Argentina</address>
+            <address>Copyright &copy; 2022 Trackgenix S.A. All rights reserved.</address>
         </footer>
     </body>
 </html>

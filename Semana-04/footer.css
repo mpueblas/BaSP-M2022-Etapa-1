@@ -12,18 +12,14 @@ footer{
     color: #AACE9B;
     flex-wrap: wrap;
 }
-
 .lista-footer{
     display:flex;
     flex-direction:row;
     align-items:center;
-
 }
-
 .footer address{
     display:flex;
     align-self: flex-end;
     align-items:center;
     color: #AACE9B;
-
 }

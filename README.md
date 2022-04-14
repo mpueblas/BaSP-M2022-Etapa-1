@@ -14,6 +14,9 @@ We wrote the Css code giving the visual style to the page. We don`t use any flex
 ## WEEK 04
 We re-wrote the Css code using Flex-box and some Media-queries to make an responsive page. We take four different screen sizes to design the layouts. 
 
+## WEEK 05
+We started to learn the first programming language of the course, Java Script. We resolved excercises in six different .js files. Finally we fix the errors of previous weeks.
+
 GitHub link: https://mpueblas.github.io/BaSP-M2022-Etapa-1/Semana-04/
 
 ## Martín Pueblas

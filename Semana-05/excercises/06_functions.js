@@ -54,7 +54,7 @@ function sumar (a, b){
     }
 }
 console.log(sumar(5,6.7));
-//e. Convertir la validación del ejercicio 6d) en una función separada y llamarla dentro de la función suma probando que todo
+//e.  Convertir la validación del ejercicio 6d) en una función separada y llamarla dentro de la función suma probando que todo
 //siga funcionando igual.
 console.log('Exercise 6.e');
 

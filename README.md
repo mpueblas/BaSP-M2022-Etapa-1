@@ -17,6 +17,9 @@ We re-wrote the Css code using Flex-box and some Media-queries to make an respon
 ## WEEK 05
 We started to learn the first programming language of the course, Java Script. We resolved excercises in six different .js files. Finally we fix the errors of previous weeks.
 
-GitHub link: https://mpueblas.github.io/BaSP-M2022-Etapa-1/Semana-04/
+## WEEK 06
+We used the week ones Figma design like sketch to make our Sign Up and Log In pages. For the estructure we used HTML, CSS for the style issues and we started to apply Java Script to give functionality to our forms.
+
+GitHub link: https://mpueblas.github.io/BaSP-M2022-Etapa-1/Semana-06/
 
 ## Martín Pueblas

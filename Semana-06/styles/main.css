@@ -1,0 +1,310 @@
+main{
+    padding-top: 91px;
+    padding-bottom: 104px;
+    display:flex;
+    flex-direction: column;
+    width:100%
+}
+.homepage{
+    display:flex;
+    flex-direction: column;
+    width: 100%; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../assets/background-img.jpg);
+    align-items: center;
+    height: 79vh;
+    padding-bottom: 40%;
+}
+.homepage img{
+    width:40%;
+    height: auto;
+    margin: 10%;
+    max-width: 450px 520px; 
+}
+.what-is-trackgenix{
+    margin-top: 5%;
+    padding: 5%;
+    display:flex;
+    flex-direction: column;
+    border-bottom: 60px solid #49A37B;
+    border-width: 60px;
+}
+.what-is-trackgenix img{
+    width: 70%;
+    align-self: center;
+}
+.what-can-i-do{
+    margin-top: 5%;
+    padding: 5%;
+    display:flex;
+    flex-direction: column;
+    border-bottom: 60px solid #49A37B;
+    border-width: 60px;
+}
+.img-text{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+    margin-top: 16%;
+}
+.img-text img{
+    width:30%;
+}
+.text-section3{
+    width: 65%;
+}
+.about-us{
+    margin-top: 5%;
+    padding: 5%;
+    display:flex;
+    flex-direction: column;
+    border-bottom: 60px solid #49A37B;
+    border-width: 60px;
+    width:90%;
+}
+.img-text-aboutus{
+    display:flex;
+    flex-direction: column;
+    width: 94%;
+    align-self: center;
+}
+.about-us img{
+    text-align: left;
+    justify-content: center;
+}
+.text1-section4{
+    margin-top:16%;
+    margin-bottom: 16%;
+}
+.text2-section4{
+    text-align: right;
+    margin-top:16%;
+    margin-bottom: 16%;
+    align-self: flex-end;
+}
+.get-in-touch{
+    margin-top: 5%;
+    padding: 5%;
+    display:flex;
+    flex-direction: column;
+    border-bottom: 60px solid #49A37B;
+    border-width: 60px;
+    width:90%;
+}
+.container-section5{
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    align-self:left;
+}
+.container-section5 input, select, textarea, button{
+    width: 85%;
+    height: 37px;
+    font-family:'Roboto', sans-serif;
+    line-height:normal;
+}
+.container-section5 select{
+    width:85%
+}
+.container-section5 textarea{
+    width: 85%;
+}
+.container-section5 label{
+    align-self: left;
+}
+.address-container{
+    display:flex;
+    flex-direction: row;
+}
+.address-container img{
+    margin: 5%;
+}
+.address-text{
+    margin: 5%;
+}
+.end{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #373867;
+}
+.end-container{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+.end ol{
+    margin-left: 15%;
+}
+#message, #phonenumber{
+    font-family:'Roboto', sans-serif;
+    line-height:normal;
+}
+#buttom-submit{
+    background-color: #AACE9B;
+    color: #373867;
+    font-weight: bold;
+}
+@media (min-width: 480px) {   
+    .what-is-trackgenix{
+        display:flex;
+        flex-direction: row;
+        margin-top: 5%;
+        padding: 5%;
+        border-bottom: 60px solid #49A37B;
+        border-width: 60px;
+    }
+    .container1{
+        width: 94%;
+        align-self: center;  
+    }
+    .container2{
+        width: 57%;   
+        margin:5%;
+    }
+    .what-can-container{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .img-text{
+        width: 35%;
+        align-self:center;
+        flex-basis: 45%;
+    }
+    .img-text-aboutus{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top:3%;
+    }
+    .about-us p{
+        width: 52%;
+        height: auto;
+        align-self: stretch;
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+    .about-us img{
+        width:100%;
+        height: auto;
+        flex-basis: 45%;
+        align-self: center;
+    }
+    .text1-section4{
+        order: 1;
+    }
+    .img1-section4{
+        order:2;
+    }
+    .text2-section4{
+        order: 4;
+    }
+    .img2-section4{
+        order: 3;
+    }
+    .get-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-right: 16%;
+    }
+    .get-container form{
+        width: 45%;
+    }
+    .get-container img{
+    margin: 2%;
+    }
+    .get-in-touch{
+        margin-top: 5%;
+        padding: 5%;
+        display:flex;
+        flex-direction: column;
+        border-bottom: 1px solid #000;
+        border-width: 1px;
+        width:90%;
+    }
+    .address{
+        display:flex;
+        flex-direction: column;
+        width: 45%;
+        justify-content: space-around;
+    }
+    .end{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 5% 0;
+    }
+    .end-container{
+        width: 17%;
+        align-self: baseline;
+    }
+}   
+@media (min-width: 768px) {
+    .img-menu-header{
+        visibility: hidden
+    }
+    .what-is-trackgenix{
+    padding-top: 115px;
+    }
+    .what-can-i-do{
+    padding-top: 115px;
+    padding-bottom: 5%;
+    }
+    .about-us{
+        padding-top: 115px;
+    }
+    .get-in-touch{
+        padding-top: 115px;
+    }
+    #aside{
+        display:inline-block;
+        z-index: 100;
+        position:fixed;
+        top:91px;
+        width:234px;
+        height:100%;
+        padding-top: 69.52px;
+        font-weight:bold;
+        color: #373867;
+        background-color:#AACE9B;
+        border:10px;
+        text-align: left;
+}
+    #main{
+        padding-left: 234px;
+    }
+}
+@media (min-width: 1024px) {
+    .img-menu-header{
+        visibility: hidden
+    }
+    #aside{
+        display:inline-block;
+        z-index: 100;
+        position:fixed;
+        top:91px;
+        width:308px;
+        height:100%;
+        padding-top: 69.52px;
+        font-weight:bold;
+        color: #373867;
+        background-color:#AACE9B;
+        border:10px;
+        text-align: left;
+    }
+    #main{
+        padding-left: 300px;
+    }
+}

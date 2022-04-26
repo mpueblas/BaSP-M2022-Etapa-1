@@ -36,26 +36,26 @@
             </ul>
         </nav>
     </aside>
-    <main id="main" class="main login-main">
+    <main class="main login-main">
         <div class="circle">
             <img src="../assets/Logo.png" class="logo-img">
         </div>
         <div id="square-1-login" class="square">
             <div id="square-2-login" class="square">
-                <h2>log in</h2>
+                <h2>Log-in</h2>
                 <form id="form-login" class="form-login">
                     <div class="forms-1">
                         <div id="div-email" class="form-gral">
                             <label for="email" class="form-lbl">email</label>
                             <div class="form-div-inpt">
-                                <input type="email" id="email" class="form-inpt" name="email" placeholder="Click on me to write" required>
+                                <input value="" type="email" id="email" class="form-inpt" name="email" placeholder="Click on me to write">
                             </div>
                             <p class="error-text">Error: type a valid e-mail account.</p>                 
                         </div>
                         <div id="div-password" class="form-gral">
                             <label for="pasword" class="form-lbl">password</label>
                             <div class="form-div-inpt">
-                                <input value="cualquiercosa" type="text" id="password" class="form-inpt" name="password" placeholder="Click on me to write">
+                                <input value="" type="text" id="password" class="form-inpt" name="password" placeholder="Click on me to write">
                             </div>
                             <p class="error-text">Error: incorrect password.</p>
                         </div>
@@ -63,17 +63,17 @@
                             <input type="checkbox" id="remember" class="checkbox" name="remember">
                             <label for="remember"id="remember-txt" class="form-inpt">Remember me</label>    
                         </div>
-                        <div id="form-mssg" class="form-mssg">
+                        <div id="form-mssg" class="form-mssg hide">
                             <p>
-                                <i class="fa-solid fa-circle-exclamation"></i>
                                 Error: E-mail account or password invalid.
                                 Try again.
                             </p>
                         </div>
+                        <div id="form-good" class="form-good hide"></div> 
                     </div>
                     <div class="buttons">
-                        <a class="button-1" type="#" value="forgot password?">forgot password?</a>
-                        <input class="button-2" type="submit" value="continue"></input>
+                        <a class="button-1" type="#" value="Forgot password?">Forgot password?</a>
+                        <input class="button-2" type="submit" value="Continue"></input>
                         <p class="warnings" id="warnings"></p>
                     </div>
                 </form>

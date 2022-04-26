@@ -278,7 +278,7 @@ main{
     background-color: #fff;
     width: 93%;
     max-width: 540px;
-    height: 590px;
+    height: 471px;
     border-radius: 5%;
 }
 #square-2-login{
@@ -420,6 +420,15 @@ main{
     .get-in-touch{
         padding-top: 115px;
     }
+    .login-main {
+        display:flex;
+        flex-direction: column;
+        background-color: #9f9fb2;
+        height: 1150px;
+        padding-bottom: 118px;
+        padding-left: 0%;
+        margin-left: 22%;
+    }
     #aside{
         display:inline-block;
         z-index: 100;
@@ -433,7 +442,7 @@ main{
         background-color:#AACE9B;
         border:10px;
         text-align: left;
-}
+    }
     #main{
         padding-left: 234px;
     }

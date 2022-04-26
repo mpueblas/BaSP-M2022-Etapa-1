@@ -18,13 +18,21 @@
 }
 .form-mssg {
     background-color: rgba(170, 206, 152, 0.6);
-    display: none;
-}
-.form-mssg-active {
     display: flex;
     color: #bb2929;
     font-size: 12px;
 }
+
+.form-good {
+    background-color: rgba(170, 206, 152, 0.6);
+    display: flex;
+    align-self: center;
+    margin: 5%;
+}
+.hide{
+    visibility: hidden;
+}
+
 .form-exit-message {
     display: none;
 }

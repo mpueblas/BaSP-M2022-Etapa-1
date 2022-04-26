@@ -15,34 +15,68 @@
     <link rel="stylesheet" type="text/css" href="../styles/main.css">
     <link rel="stylesheet" type="text/css" href="../styles/footer.css">
     <link rel="stylesheet" type="text/css" href="../styles/login.css">
+    <script src="../javascript/login.js"></script>
 </head>
 <body>
     <header id="header">
-        <a href="../views/index.html"><img src="../assets/Logo.png"></a>
+        <img class="img-menu-header" src="../assets/burguer-menu.png">
+        <img class="img-logo-header" src="../assets/Logo.png">
+        <a href="./employee-signup.html"><input class="sign-up-button" type="button" name="submit" value="Sign up"></a>
     </header>
-    <main>
+    <aside id="aside">
+        <nav>
+            <div id="shortcuts">Shortcuts</div>
+            <ul>
+                <li class="nav-links"><a class="nav-titles" href="./index.html">Homepage</a></li>
+                <li class="nav-links"><a class="nav-titles" href="#what-is-trackgenix">What is Trackgenix?</a></li>
+                <li class="nav-links"><a class="nav-titles" href="#what-can-i-do">Why choose Trackgenix?</a></li>
+                <li class="nav-links"><a class="nav-titles" href="#about-us">About us</a></li>
+                <li class="nav-links"><a class="nav-titles" href="#get-in-touch">Get in touch</a></li>
+                <li class="nav-links"><a class="nav-titles" href="#">Log in</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main id="main" class="main login-main">
         <div class="circle">
             <img src="../assets/Logo.png" class="logo-img">
         </div>
-        <div id="square-1" class="square">
-            <div id="square-2" class="square">
+        <div id="square-1-login" class="square">
+            <div id="square-2-login" class="square">
                 <h2>log in</h2>
-                <form>
+                <form id="form-login" class="form-login">
                     <div class="forms-1">
-                        <label for="email">email</label>
-                        <input type="email" id="email" name="email" placeholder="Click on me to write">                   
-                        <label for="pasword">password</label>
-                        <input type="text" id="password" name="password" placeholder="Click on me to write">
-                        <div class="remember">
-                            <input type="checkbox" id="remember">
-                            <label for="activar">Remember me</label>    
-                        </div>            
+                        <div id="div-email" class="form-gral">
+                            <label for="email" class="form-lbl">email</label>
+                            <div class="form-div-inpt">
+                                <input type="email" id="email" class="form-inpt" name="email" placeholder="Click on me to write" required>
+                            </div>
+                            <p class="error-text">Error: type a valid e-mail account.</p>                 
+                        </div>
+                        <div id="div-password" class="form-gral">
+                            <label for="pasword" class="form-lbl">password</label>
+                            <div class="form-div-inpt">
+                                <input value="cualquiercosa" type="text" id="password" class="form-inpt" name="password" placeholder="Click on me to write">
+                            </div>
+                            <p class="error-text">Error: incorrect password.</p>
+                        </div>
+                        <div id="div-remember" class="form-gral">
+                            <input type="checkbox" id="remember" class="checkbox" name="remember">
+                            <label for="remember"id="remember-txt" class="form-inpt">Remember me</label>    
+                        </div>
+                        <div id="form-mssg" class="form-mssg">
+                            <p>
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                Error: E-mail account or password invalid.
+                                Try again.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <a class="button-1" type="#" value="forgot password?">forgot password?</a>
+                        <input class="button-2" type="submit" value="continue"></input>
+                        <p class="warnings" id="warnings"></p>
                     </div>
                 </form>
-            </div>
-            <div class="buttons">
-                <input class="button-1" type="submit" value="forgot password?"></input>
-                <input class="button-2" type="submit" value="continue"></input>
             </div>
         </div>
     </main>

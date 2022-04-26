@@ -104,6 +104,9 @@ h5{
     flex-direction: column;
     width: 70%;
 }
+.forms-1 label{
+    padding-left: 0%;
+}
 .subtittle{
     font-weight: 700;
     font-size: 30px;

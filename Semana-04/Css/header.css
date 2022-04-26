@@ -10,6 +10,9 @@ header{
     background-color: #373867;
     z-index: 100;
 }
+.header-employee{
+    justify-content: flex-start;
+}
 .img-menu-header{
     display:flex;
     align-self: center;

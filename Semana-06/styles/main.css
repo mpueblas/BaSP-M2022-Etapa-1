@@ -143,6 +143,158 @@ main{
 .end ol{
     margin-left: 15%;
 }
+.login-main {
+    display:flex;
+    flex-direction: column;
+    background-color: #9f9fb2;
+    height: 1150px;
+    padding-bottom: 118px;
+}
+.login-main img{
+    align-self:center;
+    width:65%;
+    height: auto;
+}
+.circle{
+    display:flex;
+    flex-flow: column wrap;
+    align-self: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    left: 640px;
+    top: 147px;
+    border-radius: 50%;
+    }
+.forms-1{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.forms-1 input{
+    width:260px;
+    margin-bottom: 10px;
+}
+.column-1{
+    display:flex;
+    flex-flow: column wrap;
+}
+.column-2{
+    display:flex;
+    flex-flow: column wrap;
+}
+.column-1{
+    display:flex;
+    flex-flow:column wrap;
+}
+.column-2{
+    display:flex;
+    flex-flow:column wrap;
+}
+.buttons{
+    display: flex;
+    justify-items:center ;
+    align-items:center;
+    justify-content: space-between;
+    align-self:center;
+    width:75%;
+}
+.button-1{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    padding: 1px 26px;
+    background: #FFFFFF;
+    border: 1px solid #373867;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+.button-2-employee{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 36px;
+    background: #AACE9B;
+    border-radius: 5px;
+    border: none;
+    margin:5%;
+}
+.button-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 36px;
+    background: #AACE9B;
+    border-radius: 5px;
+    border: none;
+    margin-left:10%;
+}
+.remember{
+    display:flex;
+    width: 80%;
+}
+.remember input{
+    width:16px;
+    height: 16px;
+}
+.remember label{
+    padding-top: 1%;
+}
+#square-1{
+    display: flex;
+    flex-flow: column wrap;
+    align-self: center;
+    justify-content: space-around;
+    align-content: center;
+    background-color: #fff;
+    width: 93%;
+    max-width: 540px;
+    height: 1352px;
+    border-radius: 5%;
+}
+#square-2{
+    display:flex;
+    flex-flow: column wrap;
+    align-self: flex-start;
+    justify-content:space-around;
+    align-items: center;
+    text-align: left;
+    border: 1px rgba(0, 0, 0, 1);
+    border-style: solid;
+    border-radius: 10%;
+    width: 350px;
+    height: 956pxpx;
+}
+#square-1-login{
+    display: flex;
+    flex-flow: column wrap;
+    align-self: center;
+    justify-content: flex-start;
+    align-content: center;
+    background-color: #fff;
+    width: 93%;
+    max-width: 540px;
+    height: 590px;
+    border-radius: 5%;
+}
+#square-2-login{
+    display:flex;
+    flex-flow: column wrap;
+    align-self: flex-start;
+    justify-content:space-around;
+    align-items: center;
+    text-align: left;
+    border: 1px rgba(0, 0, 0, 1);
+    border-style: solid;
+    border-radius: 10%;
+    width: 350px;
+    height: 956pxpx;
+    margin-top:10%;
+}
 #message, #phonenumber{
     font-family:'Roboto', sans-serif;
     line-height:normal;

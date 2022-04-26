@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trackgenix SA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/header.css">
+    <link rel="stylesheet" type="text/css" href="../styles/sidebar.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <link rel="stylesheet" type="text/css" href="../styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="../styles/login.css">
+</head>
+<body>
+    <header id="header">
+        <img class="img-menu-header" src="../assets/burguer-menu.png">
+        <img class="img-logo-header" src="../assets/Logo.png">
+        <a href="./employee-signup.html"><input class="sign-up-button" type="button" name="submit" value="Sign up"></a>
+    </header>
+    <aside id="aside">
+        <nav>
+            <div id="shortcuts">Shortcuts</div>
+            <ul>
+                <li class="nav-links"><a class="nav-titles" href="./index.html">Homepage</a></li>
+                <li class="nav-links"><a class="nav-titles" href="#what-is-trackgenix">What is Trackgenix?</a></li>
+                <li class="nav-links"><a class="nav-titles" href="#what-can-i-do">Why choose Trackgenix?</a></li>
+                <li class="nav-links"><a class="nav-titles" href="#about-us">About us</a></li>
+                <li class="nav-links"><a class="nav-titles" href="#get-in-touch">Get in touch</a></li>
+                <li class="nav-links"><a class="nav-titles" href="./login.html">Log in</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main id="main" class="main login-main">
+        <div class="circle">
+            <img src="../assets/Logo.png" class="logo-img">
+        </div>
+        <div id="square-1" class="square">
+            <div id="square-2" class="square">
+                <h2>sign up</h2>
+                <form>
+                    <div class="forms-1">
+                        <div class="column-1">
+                            <label for="name">name:</label>
+                            <input id="name" type="text" name="name" placeholder="Name" required>
+                            <label for="surname">surname:</label>
+                            <input id="surname" type="text" name="surname" placeholder="Surname" required>
+                            <label for="id">ID:</label>
+                            <input id="id" type="number" name="id" placeholder="ID" required>
+                            <label for="birthday">birth date:</label>
+                            <input id="birthday" type="date" name="bday" placeholder="Birth Date" required>
+                            <label for="phone">phone:</label>
+                            <input id="phone" type="tel" name="phone" placeholder="Phone" required>
+                        </div>
+                        <div class="column-2">
+                            <label for="address">address:</label>
+                            <input id="pc" type="text" name="address" placeholder="Address" required>
+                            <label for="city">city:</label>
+                            <input id="city" type="text" name="city" placeholder="City" required>    
+                            <label for="pc">postal Code:</label>
+                            <input id="pc" type="text" name="pc" placeholder="Postal Code" required>
+                            <label for="e-mail">E-mail:</label> 
+                            <input id="e-mail" type="email" name="e-mail" placeholder="E-mail" required>
+                            <label for="rpt-password">repeat password:</label>
+                            <input id="rpt-password" type="password" name="rpt-password" placeholder="Repeat Password" required>
+                        </div>        
+                    </div>
+                </form>
+            </div>
+            <div class="buttons">
+                <input class="button-2-employee" type="submit" value="create account"></input>
+                <input class="button-1" type="submit" value="cancel"></input>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <ul class="lista-footer">
+            <li class="iconos-footer"><a href="https://www.linkedin.com/"><img src="../assets/Footer 1.png" alt="Linkedin"></a></li>
+            <li class="iconos-footer"><a href="https://www.twitter.com/"><img src="../assets/Footer 2.png" alt="Twitter"></a></li>
+            <li class="iconos-footer"><a href="https://www.facebook.com//"><img src="../assets/Footer 3.png" alt="Facebook"></a></li>
+            <li class="iconos-footer"><a href="https://www.instagram.com/"><img src="../assets/Footer 4.png" alt="Instagram"></a></li>
+            <li class="iconos-footer"><a href="https://github.com/"><img src="../assets/Footer 5.png" alt="Github"></a></li>
+        </ul>
+        <address>Rosario, Argentina</address>
+        <address>Copyright &copy; 2022 Trackgenix S.A. All rights reserved.</address>
+    </footer>
+</body>
+</html>

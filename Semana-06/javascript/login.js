@@ -72,10 +72,13 @@ window.onload = function(){
         if(formValidation() == true && passValidation() == true){
             boxGood.classList.remove('hide');
             boxGood.innerHTML = 'mail: ' + mailValue.value + '/ password: ' + passValue.value;
+            wrongValidation.classList.add('hide');
+
         }else {
             wrongValidation.classList.remove('hide');
         }
     }
+    
     console.log(mailValue.value, passValue.value);
     
     
@@ -88,4 +91,6 @@ window.onload = function(){
         }
     }
     button.addEventListener('submit', validationBotton);*/
+
+
 }

@@ -78,19 +78,4 @@ window.onload = function(){
             wrongValidation.classList.remove('hide');
         }
     }
-    
-    console.log(mailValue.value, passValue.value);
-    
-    
-    
-    /*    
-    function validationBotton(){
-        if(formValidation() == true && passValidation() ==true){    
-            console.log(daleee)
-            return true;
-        }
-    }
-    button.addEventListener('submit', validationBotton);*/
-
-
 }

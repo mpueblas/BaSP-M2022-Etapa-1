@@ -45,7 +45,7 @@ window.onload = function(){
     nameInput.addEventListener('blur', formValidation);
     nameInput.addEventListener('focus', resetForm);
 
-
+/*
 var surnameInput = document.getElementById('surname');
 console.log(surnameInput.value);
 function formValidation() {
@@ -73,7 +73,7 @@ nameInput.addEventListener('blur', formValidation);
 nameInput.addEventListener('focus', resetForm);
 
 
-
+*/
 
 
 }

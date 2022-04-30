@@ -18,6 +18,7 @@
     <script src="../javascript/employee-signup.js"></script>
 </head>
 <body>
+    em-form-botton
     <header id="header">
         <img class="img-menu-header" src="../assets/burguer-menu.png">
         <img class="img-logo-header" src="../assets/Logo.png">
@@ -80,7 +81,7 @@
                             <div id="em-birth-date-div" class="em-form-group">
                                 <label class="em-form-label" for="birth-date">birth date:</label>
                                 <div class="em-form-div-input">
-                                    <input id="birth-date" class="em-form-input" type="number" name="birth-date" placeholder="birth date" required>
+                                    <input id="birth-date" class="em-form-input" type="date" name="birth-date" placeholder="birth date" required>
                                 </div>
                                 <p class="em-error-text">
                                     Invalid format for birth date (expected dd/mm/yyyy)
@@ -175,17 +176,14 @@
                     </div>
                     <!-- Form messages-->
                     <div class="em-form-group em-form-div-log-in-btn">
-                        <button class="em-form-botton" type="submit">Log in</button>
+                        <button class="em-form-botton">Log in</button>
                         <p id="em-form-exit-message" class="em-form-exit-message">
                             alert with form information
                         </p>
                     </div>
                 </form>
             </div>
-            <div class="buttons">
-                <input class="button-2-employee" type="submit" value="create account"></input>
-                <input class="button-1" type="submit" value="cancel"></input>
-            </div>
+            
         </div>
     </main>
     <footer id="footer">

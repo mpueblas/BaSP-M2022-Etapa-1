@@ -1,9 +1,8 @@
 window.onload = function(){
     var inputs = document.querySelectorAll('#em-form input');
-    var form = document.getElementById('em-form');
     var letras =["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r",
-    "s","u","v","w","x","y","z", "A","B","C","D","E","F","G","H","I","J","K","L","M","N",
-    "O","P","Q","R","S","U","V","W","X","Y","Z"];
+    "s", "t", "u","v","w","x","y","z", "A","B","C","D","E","F","G","H","I","J","K","L","M","N",
+    "O","P","Q","R","S","T","U","V","W","X","Y","Z"];
    
 
     function nameValidation(myString){
@@ -30,11 +29,11 @@ window.onload = function(){
     function formValidation() {
         if(nameValidation(nameInput.value) == false || nameLength(nameInput.value) == false){
             document.getElementById('em-name-div').classList.add('em-form-group-wrong');
-            document.getElementById('em-name-div').classList.remove('em-form-group-ok');
+            //document.getElementById('em-name-div').classList.remove('em-form-group-ok');
             document.querySelector('#em-name-div .em-error-text').classList.add('em-error-text-active');
             return false    
         }else{
-            document.getElementById('em-name-div').classList.remove('em-form-group-wrong');
+            //document.getElementById('em-name-div').classList.remove('em-form-group-wrong');
             document.getElementById('em-name-div').classList.add('em-form-group-ok');
             document.querySelector('#em-name-div .em-error-text').classList.remove('em-error-text-active');
             
@@ -159,10 +158,32 @@ window.onload = function(){
     inputs[2].addEventListener('focus', dniResetForm);
 
 /////BIRTHDATE//////
-
-
-
-
+    
+    function isFullAge(date) {  
+        var inputDate = new Date(date);
+        var thisMoment = new Date(Date.now());
+      
+        return new Date(thisMoment - inputDate).getFullYear() - 1970 >= 18;
+      }
+    function dateValidation(){
+        var bdValidation = isFullAge(inputs[3].value);
+        if(bdValidation === true){
+            document.getElementById('em-birth-date-div').classList.remove('em-form-group-wrong');
+            document.getElementById('em-birth-date-div').classList.add('em-form-group-ok');
+            return true;
+        } else{
+            document.getElementById('em-birth-date-div').classList.add('em-form-group-wrong');
+            document.getElementById('em-birth-date-div').classList.remove('em-form-group-ok');
+            document.querySelector('#em-birth-date-div .em-form-input-error').classList.add('em-form-input-error-active');
+            return false;
+        }
+    }
+    function bdResetForm(e){
+        document.getElementById('em-birth-date-div').classList.remove('em-form-group-wrong');
+        document.getElementById('em-birth-date-div').classList.remove('em-form-group-ok');
+    }
+    inputs[3].addEventListener('blur', dateValidation);
+    inputs[3].addEventListener('focus', bdResetForm)
 /////////////
 ////PHONENUMBER//////
     function numberValidation(number){
@@ -215,10 +236,10 @@ window.onload = function(){
     }
     inputs[4].addEventListener('blur', phoneValidation);
     inputs[4].addEventListener('focus', numberResetForm);
-    }
+    
 
     ////////DIRECCION/////
-    function addressValidation(address){
+    function addressValidation(addRess){
         var characters = ["a","b","c","d","e","f","g","h","i","j","k",
         "l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", 
         "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P",
@@ -229,22 +250,24 @@ window.onload = function(){
         var symbols = 0;
         var space = " ";
         var spaceCount = 0;
-        for(var i = 0; i < inputs[address].value.length; i ++){
-            if(numbers.includes(inputs[address].value[i])){
+        for(var i = 0; i < inputs[addRess].value.length; i ++){
+            if(numbers.includes(inputs[addRess].value[i])){    
                 num++;
-            }else if (characters.includes(inputs[address].value[i])){
+            }else if (characters.includes(inputs[addRess].value[i])){
                 char++;
-            }else if (space.includes(inputs[address].value[i])){
+            }else if (space.includes(inputs[addRess].value[i])){
                 spaceCount++;
             } else {
                 symbols++
             }
         }
-        if (inputs[address].value.length >= 5 && num >= 1 && char >= 1 && spaceCount >= 1 && symbols == 0){
+        if (inputs[addRess].value.length >= 5 && num >= 1 && char >= 1 && spaceCount >= 1 && symbols == 0){
             console.log('true')
+            console.log(inputs[addRess]);
             return true;
         }else {
             console.log('false')
+            
             return false;
         }
     }
@@ -269,9 +292,241 @@ window.onload = function(){
         document.getElementById('em-address-div').classList.remove('em-form-group-wrong');
         document.getElementById('em-address-div').classList.remove('em-form-group-ok');
         document.querySelector('#em-address-div .em-error-text').classList.remove('em-error-text-active');
-    
+    }
     inputs[5].addEventListener('blur', directionValidation);
     inputs[5].addEventListener('focus', addressResetForm);
-
     
-}
+////////////city////
+    function cityValidation(city){
+        var characters = ["a","b","c","d","e","f","g","h","i","j","k",
+        "l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", 
+        "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P",
+        "Q","R","S","T","U","V","W","X","Y","Z"]; 
+        var numbers = ['0','1','2','3','4','5','6','7','8','9'];
+        var num = 0;
+        var char = 0;
+        var symbols = 0;
+        for(var i = 0; i < inputs[city].value.length; i ++){
+            if(numbers.includes(inputs[city].value[i])){
+                num++;
+            }else if (characters.includes(inputs[city].value[i])){
+                char++;
+            } else {
+                symbols++
+            }
+        }
+        if (inputs[city].value.length >= 3 && num == 0 && char >= 1 && symbols == 0){
+            console.log('true')
+            return true;
+        }else {
+            console.log('false')
+            return false;
+        }
+    }
+
+    function cityVal(){
+        var valid = cityValidation(6);
+        if(valid === true){
+            document.getElementById('em-city-div').classList.remove('em-form-group-wrong');
+            document.getElementById('em-city-div').classList.add('em-form-group-ok');
+            document.querySelector('#em-city-div .em-error-text').classList.remove('em-error-text-active');
+            console.log('true1');
+            return true;
+        } else{
+            document.getElementById('em-city-div').classList.add('em-form-group-wrong');
+            document.getElementById('em-city-div').classList.remove('em-form-group-ok');
+            document.querySelector('#em-city-div .em-error-text').classList.add('em-error-text-active');
+            console.log('false1');
+            return false;
+        }
+    }
+    function cityResetForm(){
+         document.getElementById('em-city-div').classList.remove('em-form-group-wrong');
+         document.getElementById('em-city-div').classList.remove('em-form-group-ok');
+         document.querySelector('#em-city-div .em-error-text').classList.remove('em-error-text-active');
+    }
+    inputs[6].addEventListener('blur', cityVal);
+    inputs[6].addEventListener('focus', cityResetForm);
+    
+//////////POSTCODE//////
+    function pcodeValidation(pnumber){
+        var characters = ["a","b","c","d","e","f","g","h","i","j","k",
+        "l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", 
+        "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P",
+        "Q","R","S","T","U","V","W","X","Y","Z"]; 
+        var numbers = ['0','1','2','3','4','5','6','7','8','9'];
+        var num = 0;
+        var char = 0;
+        var symbols = 0;
+        for(var i = 0; i < inputs[pnumber].value.length; i ++){
+            if(numbers.includes(inputs[pnumber].value[i])){
+                num++;
+            }else if (characters.includes(inputs[pnumber].value[i])){
+                char++;
+            } else {
+                symbols++
+            }
+        }
+        if (inputs[pnumber].value.length == 4 || inputs[pnumber].value.length == 5 && num == 4 ||num == 5 && char == 0 && symbols == 0){
+            console.log('true')
+            return true;
+        }else {
+            console.log('false')
+            return false;
+        }
+    }
+    function pValidation(){
+        var valid = pcodeValidation(7);
+        if(valid === true){
+            document.getElementById('em-postal-code-div').classList.remove('em-form-group-wrong');
+            document.getElementById('em-postal-code-div').classList.add('em-form-group-ok');
+            document.querySelector('#em-postal-code-div .em-error-text').classList.remove('em-error-text-active');
+            console.log('true1');
+            return true;
+        } else{
+            document.getElementById('em-postal-code-div').classList.add('em-form-group-wrong');
+            document.getElementById('em-postal-code-div').classList.remove('em-form-group-ok');
+            document.querySelector('#em-postal-code-div .em-error-text').classList.add('em-error-text-active');
+            console.log('false1');
+            return false;
+        }
+    }
+
+    function pResetForm(){
+        document.getElementById('em-postal-code-div').classList.remove('em-form-group-wrong');
+        document.getElementById('em-postal-code-div').classList.remove('em-form-group-ok');
+        document.querySelector('#em-postal-code-div .em-error-text').classList.remove('em-error-text-active');
+    }
+    inputs[7].addEventListener('blur', pValidation);
+    inputs[7].addEventListener('focus', pResetForm);
+
+/////EMAIL///////
+    var regexMail = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
+    function mailValidation() {
+        if(regexMail.test(inputs[8].value)){
+            document.getElementById('email-div').classList.remove('em-form-group-wrong');
+            document.getElementById('email-div').classList.add('em-form-group-ok');
+            document.querySelector('#email-div .em-error-text').classList.remove('em-error-text-active');
+            console.log('true1');
+            return true;
+        } else{
+            document.getElementById('email-div').classList.add('em-form-group-wrong');
+            document.getElementById('email-div').classList.remove('em-form-group-ok');
+            document.querySelector('#email-div .em-error-text').classList.add('em-error-text-active');
+            console.log('false1');
+            return false;
+        }
+    };
+    
+    function mailResetForm(e){
+        document.getElementById('email-div').classList.remove('em-form-group-wrong');
+        document.getElementById('email-div').classList.remove('em-form-group-ok');
+        document.querySelector('#email-div .em-error-text').classList.remove('em-form-input-error-active');
+    }
+
+    inputs[8].addEventListener('blur', mailValidation);
+    inputs[8].addEventListener('focus', mailResetForm);
+   
+    ////////PASSWORD//////
+    function passwordValidation(){
+        var numbers = ['0','1','2','3','4','5','6','7','8','9'];
+        var letters = ["a","b","c","d","e","f","g","h","i","j","k",
+        "l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", 
+        "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P",
+        "Q","R","S","T","U","V","W","X","Y","Z"];
+        var num = 0;
+        var char = 0;
+        var symbols = 0;
+        for(var i = 0; i < inputs[9].value.length; i ++){
+            if(numbers.includes(inputs[9].value[i])){
+                num++;   
+            }else if (letters.includes(inputs[9].value[i])){
+                char++;
+            } else {
+                symbols++
+            }
+        }
+        if (inputs[9].value.length >= 8 && num >= 1 && char >= 1 && symbols == 0){
+            return true;
+        }else {
+            return false;
+        }
+    }
+
+    function passValidation(){
+        if(passwordValidation() == true){
+            document.getElementById('password-div').classList.remove('em-form-group-wrong');
+            document.getElementById('password-div').classList.add('em-form-group-ok');
+            document.querySelector('#password-div .em-error-text').classList.remove('em-error-text-active');
+            console.log('true1');
+            return true;
+        } else{
+            document.getElementById('password-div').classList.add('em-form-group-wrong');
+            document.getElementById('password-div').classList.remove('em-form-group-ok');
+            document.querySelector('#password-div .em-error-text').classList.add('em-error-text-active');
+            console.log('false1');
+            return false;
+        }
+    }
+
+    function passResetForm(){
+        document.getElementById('password-div').classList.remove('em-form-group-wrong');
+        document.getElementById('password-div').classList.remove('em-form-group-ok');
+        document.querySelector('#password-div .em-error-text').classList.remove('em-form-input-error-active');
+    }
+
+    inputs[9].addEventListener('blur', passValidation);
+    inputs[9].addEventListener('focus', passResetForm);
+///////CONFIRM PASSWORD//////
+
+    function passConfirm(){
+        if(inputs[9].value.length == inputs[10].value.length){
+        return true;
+        } else {
+            return false;
+        }
+    }
+    function passConfirmation(){
+        if(passConfirm() == true){
+            document.getElementById('repeat-password-div').classList.remove('em-form-group-wrong');
+            document.getElementById('repeat-password-div').classList.add('em-form-group-ok');
+            document.querySelector('#repeat-password-div .em-error-text').classList.remove('em-error-text-active');
+            console.log('true1');
+            return true;
+        } else{
+            document.getElementById('repeat-password-div').classList.add('em-form-group-wrong');
+            document.getElementById('repeat-password-div').classList.remove('em-form-group-ok');
+            document.querySelector('#repeat-password-div .em-error-text').classList.add('em-error-text-active');
+            console.log('false1');
+            return false;
+        }
+    }
+
+    function passConResetForm(){
+        document.getElementById('repeat-password-div').classList.remove('em-form-group-wrong');
+        document.getElementById('repeat-password-div').classList.remove('em-form-group-ok');
+        document.querySelector('#repeat-password-div .em-error-text').classList.remove('em-form-input-error-active');
+    }
+
+    inputs[10].addEventListener('blur', passConfirmation);
+    inputs[10].addEventListener('focus', passConResetForm);
+
+
+    function totalValidation(){
+        if(formValidation() && surNameValidation() && dateValidation() && documentValidation() && 
+        phoneValidation() && directionValidation() && cityVal() && pValidation() &&
+         mailValidation() && passValidation() && passConfirmation()){
+            console.log("piola")
+            alert("mensaje")
+        } else{
+            console.log("nopiola")
+            alert("nomensajs")
+        }
+    }
+    
+
+    var confirmButton = document.getElementsByClassName('em-form-botton')[0];
+    confirmButton.addEventListener('click', totalValidation);
+
+}        
+

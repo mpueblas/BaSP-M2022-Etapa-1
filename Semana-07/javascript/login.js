@@ -82,15 +82,31 @@ window.onload = function(){
 
     var button = document.getElementsByClassName('button-2');
     
-    form.onsubmit = function (e){
+    form.onsubmit = function validation(e){
         e.preventDefault();
         if(formValidation() == true && passValidation() == true){
             boxGood.classList.remove('hide');
             boxGood.innerHTML = 'mail: ' + mailValue.value + '/ password: ' + passValue.value;
             wrongValidation.classList.add('hide');
-
+            fetch ("https://basp-m2022-api-rest-server.herokuapp.com/login?email=" + inputs[0].value + "&password=" + inputs[1].value)
+            .then(function (response) {
+                console.log(response);
+                return response.json();
+            })
+            .then(function(jsonResponse){
+                if (jsonResponse.success){
+                    alert(jsonResponse.msg + "Login successful");
+                    localStorage.setItem("Log-in", "successful");
+                } else {
+                    alert("Error" + jsonResponse.msg)
+                }
+            })
+            .catch(function (error){
+                alert("Error: ", error.msg);
+            })
         }else {
             wrongValidation.classList.remove('hide');
         }
     }
+    document.getElementById
 }

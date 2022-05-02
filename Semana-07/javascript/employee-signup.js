@@ -174,7 +174,6 @@ window.onload = function(){
         } else{
             document.getElementById('em-birth-date-div').classList.add('em-form-group-wrong');
             document.getElementById('em-birth-date-div').classList.remove('em-form-group-ok');
-            document.querySelector('#em-birth-date-div .em-form-input-error').classList.add('em-form-input-error-active');
             return false;
         }
     }
@@ -510,14 +509,30 @@ window.onload = function(){
 
     inputs[10].addEventListener('blur', passConfirmation);
     inputs[10].addEventListener('focus', passConResetForm);
+  
 
-
-    function totalValidation(){
+    function totalValidation(e){
+        e.preventDefault();
         if(formValidation() && surNameValidation() && dateValidation() && documentValidation() && 
         phoneValidation() && directionValidation() && cityVal() && pValidation() &&
          mailValidation() && passValidation() && passConfirmation()){
-            console.log("piola")
-            alert("mensaje")
+            console.log("piola");
+            var url = "https://basp-m2022-api-rest-server.herokuapp.com/signup?name=" + inputs[0].value + "&lastName=" + inputs[1].value + "&email=" + inputs[8].value + "&dni=" + inputs[2].value + "&dob=" + inputs[3].value + "&phone=" + inputs[4].value + "&address=" + inputs[5].value + "&city=" + inputs[6].value + "&zip=" + inputs[7].value + "&password=" + inputs[9].value
+            console.log(url);
+            alert("mensaje");
+            fetch ("https://basp-m2022-api-rest-server.herokuapp.com/signup?name=" + inputs[0].value + "&lastName=" + inputs[1].value + "&email=" + inputs[8].value + "&dni=" + inputs[2].value + "&dob=" + inputs[3].value + "&phone=" + inputs[4].value + "&address=" + inputs[5].value + "&city=" + inputs[6].value + "&zip=" + inputs[7].value + "&password=" + inputs[9].value)
+            .then(function (response){
+                console.log(response);
+                return response.json();
+            })
+            .then(function(jsonResponse){
+                if (jsonResponse.success){
+                    alert(jsonResponse.msg + "Sign-up successful");s
+                    localStorage.setItem("Sign-up", "successful");
+                } else {
+                    alert("Error" + jsonResponse.msg)
+                }
+            })
         } else{
             console.log("nopiola")
             alert("nomensajs")
@@ -526,7 +541,6 @@ window.onload = function(){
     
 
     var confirmButton = document.getElementsByClassName('em-form-botton')[0];
-    confirmButton.addEventListener('click', totalValidation);
-
+    confirmButton.addEventListener('click', totalValidation);    
 }        
 

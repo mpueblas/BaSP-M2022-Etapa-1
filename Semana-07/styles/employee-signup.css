@@ -1,27 +1,4 @@
-.em-main-container, .em-box, .em-form-container, .em-form, .em-form-group, .em-form-message, .em-form-div-input {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-transform: capitalize;
-}
-.em-main-container {
-    width: 100%;
-    height: 95vh;
-    background-color: rgba(55, 56, 103, 0.4);
-}
-.em-box {
-    width: 80%;
-    padding: 4%;
-    margin: 2%;
-    border-radius: 5%;
-    background-color: #ffffff;
-}
-.em-form-logo {
-    justify-self: flex-start; 
-    width: 18%;
-    margin-bottom: 3%;    
-}
+
 .em-form-group, .em-form-div-input {
     width: 100%;
     align-items: flex-start;

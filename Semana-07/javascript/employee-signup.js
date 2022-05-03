@@ -124,7 +124,7 @@ window.onload = function(){
                 symbols++
             }
         }
-        if (inputs[document].value.length >= 8 && num >= 8 && char == 0 && symbols == 0){
+        if (inputs[document].value.length >= 7 && num >= 7 && char == 0 && symbols == 0){
             console.log('true')
             return true;
         }else {
@@ -183,6 +183,14 @@ window.onload = function(){
     }
     inputs[3].addEventListener('blur', dateValidation);
     inputs[3].addEventListener('focus', bdResetForm)
+    function inputsBd(){
+        var date = inputs[3].value
+        var year = date.substring(0, 4);
+        var months = date.substring(5, 7);
+        var day = date.substring(8, 10);
+        var inputsThree = day + '/' + months + '/' + year;
+        console.log(inputsThree)
+    }
 /////////////
 ////PHONENUMBER//////
     function numberValidation(number){
@@ -346,6 +354,8 @@ window.onload = function(){
     }
     inputs[6].addEventListener('blur', cityVal);
     inputs[6].addEventListener('focus', cityResetForm);
+    
+  
     
 //////////POSTCODE//////
     function pcodeValidation(pnumber){
@@ -517,29 +527,59 @@ window.onload = function(){
         phoneValidation() && directionValidation() && cityVal() && pValidation() &&
          mailValidation() && passValidation() && passConfirmation()){
             console.log("piola");
-            var url = "https://basp-m2022-api-rest-server.herokuapp.com/signup?name=" + inputs[0].value + "&lastName=" + inputs[1].value + "&email=" + inputs[8].value + "&dni=" + inputs[2].value + "&dob=" + inputs[3].value + "&phone=" + inputs[4].value + "&address=" + inputs[5].value + "&city=" + inputs[6].value + "&zip=" + inputs[7].value + "&password=" + inputs[9].value
+            var date = inputs[3].value
+            var year = date.substring(0, 4);
+            var months = date.substring(5, 7);
+            var day = date.substring(8, 10);
+            var inputsThree = months + '/' + day + '/' + year
+            var url = "https://basp-m2022-api-rest-server.herokuapp.com/signup";
+            var keyList = ['name', 'lastName', 'dni', 'dob', 'phone', 'address', 'city', 'zip', 'email', 'password'];
+            var valueList = [inputs[0].value, inputs[1].value, inputs[2].value, inputsThree, inputs[4].value, inputs[5].value, inputs[6].value, inputs[7].value, inputs[8].value, inputs[9].value];
             console.log(url);
             alert("mensaje");
-            fetch ("https://basp-m2022-api-rest-server.herokuapp.com/signup?name=" + inputs[0].value + "&lastName=" + inputs[1].value + "&email=" + inputs[8].value + "&dni=" + inputs[2].value + "&dob=" + inputs[3].value + "&phone=" + inputs[4].value + "&address=" + inputs[5].value + "&city=" + inputs[6].value + "&zip=" + inputs[7].value + "&password=" + inputs[9].value)
+            fetchSignUp(url, keyList, valueList);
+        } else{
+            console.log("nopiola")
+            alert("nomensajs")
+        }
+    }
+
+
+
+
+    function fetchSignUp(url, keyList, valueList){
+        var myArray = [];
+        for(var i = 0; i < keyList.length; i ++){
+            myArray.push(keyList[i].concat("=", valueList[i]))
+        } 
+        var queryParams = myArray.join("&");
+        var fetchUrl = url.concat("?", queryParams)
+        fetch (fetchUrl)
             .then(function (response){
                 console.log(response);
                 return response.json();
             })
             .then(function(jsonResponse){
                 if (jsonResponse.success){
-                    alert(jsonResponse.msg + "Sign-up successful");s
-                    localStorage.setItem("Sign-up", "successful");
+                    alert(jsonResponse.msg + "Sign-up successful");
+                    console.log(jsonResponse.data.id);
+                    localStorage.setItem("id", jsonResponse.data.id);
+                    localStorage.setItem("name", jsonResponse.data.name);
+                    localStorage.setItem("lastName", jsonResponse.data.lastName);
+                    localStorage.setItem("dni", jsonResponse.data.dni);
+                    localStorage.setItem("dob", jsonResponse.data.dob);
+                    localStorage.setItem("phone", jsonResponse.data.phone);
+                    localStorage.setItem("address", jsonResponse.data.address);
+                    localStorage.setItem("city", jsonResponse.data.city);
+                    localStorage.setItem("zip", jsonResponse.data.zip);
+                    localStorage.setItem("email", jsonResponse.data.email);
+                    localStorage.setItem("password", jsonResponse.data.password);
                 } else {
                     alert("Error" + jsonResponse.msg)
                 }
-            })
-        } else{
-            console.log("nopiola")
-            alert("nomensajs")
-        }
+        })
     }
-    
-
+     
     var confirmButton = document.getElementsByClassName('em-form-botton')[0];
     confirmButton.addEventListener('click', totalValidation);    
 }        

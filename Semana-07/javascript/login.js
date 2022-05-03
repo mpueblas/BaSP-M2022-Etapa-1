@@ -96,7 +96,6 @@ window.onload = function(){
             .then(function(jsonResponse){
                 if (jsonResponse.success){
                     alert(jsonResponse.msg + "Login successful");
-                    localStorage.setItem("Log-in", "successful");
                 } else {
                     alert("Error" + jsonResponse.msg)
                 }
@@ -108,5 +107,6 @@ window.onload = function(){
             wrongValidation.classList.remove('hide');
         }
     }
+
     document.getElementById
 }

@@ -20,6 +20,9 @@ We started to learn the first programming language of the course, Java Script. W
 ## WEEK 06
 We used the week ones Figma design like sketch to make our Sign Up and Log In pages. For the estructure we used HTML, CSS for the style issues and we started to apply Java Script to give functionality to our forms.
 
+## WEEK 07
+We use the query params to make an URL with the form information on it. Then we use the fetch function to make HTML request with that URL, and use the received data to set it in the Local Storage.
+
 GitHub link: https://mpueblas.github.io/BaSP-M2022-Etapa-1/Semana-06/
 
 ## Martín Pueblas

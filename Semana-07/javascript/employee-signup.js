@@ -29,11 +29,9 @@ window.onload = function(){
     function formValidation() {
         if(nameValidation(nameInput.value) == false || nameLength(nameInput.value) == false){
             document.getElementById('em-name-div').classList.add('em-form-group-wrong');
-            //document.getElementById('em-name-div').classList.remove('em-form-group-ok');
             document.querySelector('#em-name-div .em-error-text').classList.add('em-error-text-active');
             return false    
         }else{
-            //document.getElementById('em-name-div').classList.remove('em-form-group-wrong');
             document.getElementById('em-name-div').classList.add('em-form-group-ok');
             document.querySelector('#em-name-div .em-error-text').classList.remove('em-error-text-active');
             
@@ -138,13 +136,13 @@ window.onload = function(){
             document.getElementById('em-id-div').classList.remove('em-form-group-wrong');
             document.getElementById('em-id-div').classList.add('em-form-group-ok');
             document.querySelector('#em-id-div .em-error-text').classList.remove('em-error-text-active');
-            console.log('true1');
+            console.log('true');
             return true;
         } else{
             document.getElementById('em-id-div').classList.add('em-form-group-wrong');
             document.getElementById('em-id-div').classList.remove('em-form-group-ok');
             document.querySelector('#em-id-div .em-error-text').classList.add('em-error-text-active');
-            console.log('false1');
+            console.log('false');
             return false;
         }
     }
@@ -191,7 +189,6 @@ window.onload = function(){
         var inputsThree = day + '/' + months + '/' + year;
         console.log(inputsThree)
     }
-/////////////
 ////PHONENUMBER//////
     function numberValidation(number){
         var characters = ["a","b","c","d","e","f","g","h","i","j","k",
@@ -225,13 +222,13 @@ window.onload = function(){
             document.getElementById('em-phone-div').classList.remove('em-form-group-wrong');
             document.getElementById('em-phone-div').classList.add('em-form-group-ok');
             document.querySelector('#em-phone-div .em-error-text').classList.remove('em-error-text-active');
-            console.log('true1');
+            console.log('true');
             return true;
         } else{
             document.getElementById('em-phone-div').classList.add('em-form-group-wrong');
             document.getElementById('em-phone-div').classList.remove('em-form-group-ok');
             document.querySelector('#em-phone-div .em-error-text').classList.add('em-error-text-active');
-            console.log('false1');
+            console.log('false');
             return false;
         }
     }
@@ -284,13 +281,13 @@ window.onload = function(){
             document.getElementById('em-address-div').classList.remove('em-form-group-wrong');
             document.getElementById('em-address-div').classList.add('em-form-group-ok');
             document.querySelector('#em-address-div .em-error-text').classList.remove('em-error-text-active');
-            console.log('true1');
+            console.log('true');
             return true;
         } else{
             document.getElementById('em-address-div').classList.add('em-form-group-wrong');
             document.getElementById('em-address-div').classList.remove('em-form-group-ok');
             document.querySelector('#em-address-div .em-error-text').classList.add('em-error-text-active');
-            console.log('false1');
+            console.log('false');
             return false;
         }
     }
@@ -337,13 +334,13 @@ window.onload = function(){
             document.getElementById('em-city-div').classList.remove('em-form-group-wrong');
             document.getElementById('em-city-div').classList.add('em-form-group-ok');
             document.querySelector('#em-city-div .em-error-text').classList.remove('em-error-text-active');
-            console.log('true1');
+            console.log('true');
             return true;
         } else{
             document.getElementById('em-city-div').classList.add('em-form-group-wrong');
             document.getElementById('em-city-div').classList.remove('em-form-group-ok');
             document.querySelector('#em-city-div .em-error-text').classList.add('em-error-text-active');
-            console.log('false1');
+            console.log('false');
             return false;
         }
     }
@@ -390,13 +387,13 @@ window.onload = function(){
             document.getElementById('em-postal-code-div').classList.remove('em-form-group-wrong');
             document.getElementById('em-postal-code-div').classList.add('em-form-group-ok');
             document.querySelector('#em-postal-code-div .em-error-text').classList.remove('em-error-text-active');
-            console.log('true1');
+            console.log('true');
             return true;
         } else{
             document.getElementById('em-postal-code-div').classList.add('em-form-group-wrong');
             document.getElementById('em-postal-code-div').classList.remove('em-form-group-ok');
             document.querySelector('#em-postal-code-div .em-error-text').classList.add('em-error-text-active');
-            console.log('false1');
+            console.log('false');
             return false;
         }
     }
@@ -416,13 +413,13 @@ window.onload = function(){
             document.getElementById('email-div').classList.remove('em-form-group-wrong');
             document.getElementById('email-div').classList.add('em-form-group-ok');
             document.querySelector('#email-div .em-error-text').classList.remove('em-error-text-active');
-            console.log('true1');
+            console.log('true');
             return true;
         } else{
             document.getElementById('email-div').classList.add('em-form-group-wrong');
             document.getElementById('email-div').classList.remove('em-form-group-ok');
             document.querySelector('#email-div .em-error-text').classList.add('em-error-text-active');
-            console.log('false1');
+            console.log('false');
             return false;
         }
     };
@@ -467,13 +464,13 @@ window.onload = function(){
             document.getElementById('password-div').classList.remove('em-form-group-wrong');
             document.getElementById('password-div').classList.add('em-form-group-ok');
             document.querySelector('#password-div .em-error-text').classList.remove('em-error-text-active');
-            console.log('true1');
+            console.log('true');
             return true;
         } else{
             document.getElementById('password-div').classList.add('em-form-group-wrong');
             document.getElementById('password-div').classList.remove('em-form-group-ok');
             document.querySelector('#password-div .em-error-text').classList.add('em-error-text-active');
-            console.log('false1');
+            console.log('false');
             return false;
         }
     }
@@ -500,13 +497,13 @@ window.onload = function(){
             document.getElementById('repeat-password-div').classList.remove('em-form-group-wrong');
             document.getElementById('repeat-password-div').classList.add('em-form-group-ok');
             document.querySelector('#repeat-password-div .em-error-text').classList.remove('em-error-text-active');
-            console.log('true1');
+            console.log('true');
             return true;
         } else{
             document.getElementById('repeat-password-div').classList.add('em-form-group-wrong');
             document.getElementById('repeat-password-div').classList.remove('em-form-group-ok');
             document.querySelector('#repeat-password-div .em-error-text').classList.add('em-error-text-active');
-            console.log('false1');
+            console.log('false');
             return false;
         }
     }
@@ -540,7 +537,7 @@ window.onload = function(){
             fetchSignUp(url, keyList, valueList);
         } else{
             errorsBox()
-            alert("nomensajs")
+            alert("Error")
         }
     }
 
@@ -637,6 +634,8 @@ window.onload = function(){
         } if(passConfirmation() = false){
             boxWrong.classList.remove('hide');
             boxWrong.innerHTML = 'Error: invalid password confirmation. Try again.';
+        } else {
+            console.log("false")
         }
     }
     

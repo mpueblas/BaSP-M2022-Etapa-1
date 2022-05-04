@@ -21,7 +21,7 @@
 <body>
     <header id="header">
         <img class="img-menu-header" src="../assets/burguer-menu.png">
-        <img class="img-logo-header" src="../assets/Logo.png">
+        <a id="index-link"href="./index.html"><img class="img-logo-header" src="../assets/Logo.png"></a>
         <a href="./employee-signup.html"><input class="sign-up-button" type="button" name="submit" value="Sign up"></a>
     </header>
     <main class="main">
@@ -32,7 +32,6 @@
                 <form id="em-form" class="em-form">
                     <div class="container">
                         <div class="col-1">
-                            <!-- User's name -->
                             <div id="em-name-div" class="em-form-group">
                                 <label class="em-form-label" for="name">name:</label>
                                 <div class="em-form-div-input">
@@ -42,7 +41,6 @@
                                     Name must contain only letters and must be at least three characters long (John)
                                 </p>
                             </div>
-                            <!-- Surname -->
                             <div id="em-surname-div" class="em-form-group">
                                 <label class="em-form-label" for="surname">surname:</label>
                                 <div class="em-form-div-input">
@@ -52,7 +50,6 @@
                                     Surname must contain only letters and must be at least three characters long (example, John Doe)
                                 </p>
                             </div>
-                            <!-- ID -->
                             <div id="em-id-div" class="em-form-group">
                                 <label class="em-form-label" for="id">ID:</label>
                                 <div class="em-form-div-input">
@@ -62,7 +59,6 @@
                                     ID must contain only numbers and must be at least seven characters long (example, 11.222.333)
                                 </p>
                             </div>
-                            <!-- Birth date -->
                             <div id="em-birth-date-div" class="em-form-group">
                                 <label class="em-form-label" for="birth-date">birth date:</label>
                                 <div class="em-form-div-input">
@@ -72,7 +68,6 @@
                                     Invalid format for birth date (expected dd/mm/yyyy)
                                 </p>
                             </div>
-                            <!-- Phone -->
                             <div id="em-phone-div" class="em-form-group">
                                 <label class="em-form-label" for="phone">phone:</label>
                                 <div class="em-form-div-input">
@@ -82,7 +77,6 @@
                                     Phone number must contain only numbers and must be at least ten numbers long
                                 </p>
                             </div>
-                            <!-- Address -->
                             <div id="em-address-div" class="em-form-group">
                                 <label class="em-form-label" for="address">address:</label>
                                 <div class="em-form-div-input">
@@ -94,7 +88,6 @@
                             </div>
                         </div>
                         <div class="col-2">
-                            <!-- City -->
                             <div id="em-city-div" class="em-form-group">
                                 <label class="em-form-label" for="city">city:</label>
                                 <div class="em-form-div-input">
@@ -104,7 +97,6 @@
                                     City must contain numbers, letters and at least one gap.
                                 </p>
                             </div>
-                            <!-- Postal code -->
                             <div id="em-postal-code-div" class="em-form-group">
                                 <label class="em-form-label" for="postal-code">postal code:</label>
                                 <div class="em-form-div-input">
@@ -114,7 +106,6 @@
                                     Postal Code must only contain numbers.
                                 </p>
                             </div>
-                            <!-- Email -->
                             <div id="email-div" class="form-group">
                                 <label class="form-label" for="email">E-mail:</label>
                                 <div class="form-div-input">
@@ -124,7 +115,6 @@
                                     Enter a valid e-mail address (example, someone@example.com)
                                 </p>
                             </div>
-                            <!-- Password -->
                             <div id="password-div" class="form-group">
                                 <label class="form-label" for="password">Password:</label>
                                 <div class="form-div-input">
@@ -134,7 +124,6 @@
                                     Password must contain letters and digits.
                                 </p>
                             </div>
-                            <!-- Repeat Password -->
                             <div id="repeat-password-div" class="form-group">
                                 <label class="form-label" for="repeat-password">Password:</label>
                                 <div class="form-div-input">
@@ -146,12 +135,10 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Remember me -->
                     <div id="em-remember-me-div" class="em-form-group">
                         <input id="em-remember-me" class="form-checkbox" type="checkbox" name="remember-me">
                         <label id="em-remember-text" class="form-input" for="em-remember-me" >Remember me</label>
                     </div>
-                    <!-- Form message error -->
                     <div id="form-wrong" class="form-wrong hide"></div>
                     <div id="em-form-message" class="em-form-message">
                         <p>
@@ -160,7 +147,6 @@
                             Please correct and try again.
                         </p>
                     </div>
-                    <!-- Form messages-->
                     <div id="bottom-container" class="em-form-group">
                         <button class="em-form-botton">Log in</button>
                         <p id="em-form-exit-message" class="em-form-exit-message">

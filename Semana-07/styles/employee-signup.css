@@ -112,6 +112,10 @@ main{
 .date{
     width:30%;
 }
+#index-link{
+    width: auto;
+    height: 85%;
+}
 #square-1-em{
     display: flex;
     flex-direction: column;

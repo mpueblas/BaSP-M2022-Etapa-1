@@ -1,9 +1,13 @@
+
 .form-gral, .form-d-inpt {
     width: 78%;
     align-items: flex-start;
     text-align: left;
 } 
-
+.logo-img{
+    width: 15%;
+    padding:3%;
+}
 .form-inpt:focus {
     border: 3px solid #373867;
     outline: none;
@@ -46,6 +50,9 @@
 }
 .form-exit-message-active {
     display: block;
+}
+#main{
+    padding-left: 0%;
 }
 #div-remember {
     display:flex;
@@ -93,24 +100,3 @@
 
 
 
-
-
-
-
-
-/*.forms-1 input{
-    margin-bottom: 0px;
-}
-.error-text{
-    margin-bottom: 20px;
-    color: red; 
-}
-.error{
-    visibility:hidden;
-}
-.blur{
-    border: 2px solid red;
-}
-.correct{
-    border: 2px solid #AACE9B;
-}*/

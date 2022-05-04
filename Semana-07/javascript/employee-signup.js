@@ -526,7 +526,6 @@ window.onload = function(){
         if(formValidation() && surNameValidation() && dateValidation() && documentValidation() && 
         phoneValidation() && directionValidation() && cityVal() && pValidation() &&
          mailValidation() && passValidation() && passConfirmation()){
-            console.log("piola");
             var date = inputs[3].value
             var year = date.substring(0, 4);
             var months = date.substring(5, 7);
@@ -535,11 +534,12 @@ window.onload = function(){
             var url = "https://basp-m2022-api-rest-server.herokuapp.com/signup";
             var keyList = ['name', 'lastName', 'dni', 'dob', 'phone', 'address', 'city', 'zip', 'email', 'password'];
             var valueList = [inputs[0].value, inputs[1].value, inputs[2].value, inputsThree, inputs[4].value, inputs[5].value, inputs[6].value, inputs[7].value, inputs[8].value, inputs[9].value];
+            var valueIList = ["Name: ", inputs[0].value, " / Surname: ", inputs[1].value, " / Id: ", inputs[2].value, " / Date of Birth: ", inputsThree, " / Phone: ", inputs[4].value, " / Address: ", inputs[5].value, " / City: ", inputs[6].value, " / Post Code: ", inputs[7].value, " / E-mail: ", inputs[8].value, " / Password: ", inputs[9].value];
             console.log(url);
-            alert("mensaje");
+            alert(valueIList);
             fetchSignUp(url, keyList, valueList);
         } else{
-            console.log("nopiola")
+            errorsBox()
             alert("nomensajs")
         }
     }
@@ -579,7 +579,67 @@ window.onload = function(){
                 }
         })
     }
-     
+    
+    if(localStorage.getItem('id') != null){
+        var jsonDate = localStorage.getItem('dob')
+        var year = jsonDate.substring(6, 10);
+        var months = jsonDate.substring(0, 2);
+        var day = jsonDate.substring(3, 5);
+        var jsonInputsThree = year + '-' + months + '-' + day
+        inputs[0].value = localStorage.getItem('name');
+        inputs[1].value = localStorage.getItem('lastName');
+        inputs[2].value = localStorage.getItem('dni');
+        inputs[3].value = jsonInputsThree;
+        inputs[4].value = localStorage.getItem('phone');
+        inputs[5].value = localStorage.getItem('address');
+        inputs[6].value = localStorage.getItem('city');
+        inputs[7].value = localStorage.getItem('zip');
+        inputs[8].value = localStorage.getItem('email');
+        inputs[9].value = localStorage.getItem('password');
+        inputs[10].value =localStorage.getItem('password')
+    } else {
+        console.log('There are no entries in local storage');
+    }
+
+    
+
+   function errorsBox() {
+        if(formValidation() = false){
+            boxWrong.classList.remove('hide');
+            boxWrong.innerHTML = 'Error: invalid Name. Try again.';  
+        } if(surNameValidation() = false){
+            boxWrong.classList.remove('hide');
+            boxWrong.innerHTML = 'Error: invalid Surname. Try again.';
+        } if(dateValidation() = false){
+            boxWrong.classList.remove('hide');
+            boxWrong.innerHTML = 'Error: invalid date of birth. Try again.';
+        } if(documentValidation() = false){
+            boxWrong.classList.remove('hide');
+            boxWrong.innerHTML = 'Error: invalid Id. Try again.';
+        } if(phoneValidation() = false){
+            boxWrong.classList.remove('hide');
+            boxWrong.innerHTML = 'Error: invalid phone number. Try again.';
+        } if(directionValidation() = false){
+            boxWrong.classList.remove('hide');
+            boxWrong.innerHTML = 'Error: invalid address. Try again.';
+        } if(cityVal() = false){
+            boxWrong.classList.remove('hide');
+            boxWrong.innerHTML = 'Error: invalid city. Try again.';
+        } if(pValidation() = false){
+            boxWrong.classList.remove('hide');
+            boxWrong.innerHTML = 'Error: invalid post-code. Try again.';
+        } if(mailValidation() = false){
+            boxWrong.classList.remove('hide');
+            boxWrong.innerHTML = 'Error: invalid e-mail. Try again.';
+        } if(passValidation() = false){
+            boxWrong.classList.remove('hide');
+            boxWrong.innerHTML = 'Error: invalid password. Try again.';
+        } if(passConfirmation() = false){
+            boxWrong.classList.remove('hide');
+            boxWrong.innerHTML = 'Error: invalid password confirmation. Try again.';
+        }
+    }
+    
     var confirmButton = document.getElementsByClassName('em-form-botton')[0];
     confirmButton.addEventListener('click', totalValidation);    
 }        

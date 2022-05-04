@@ -23,6 +23,7 @@ We used the week ones Figma design like sketch to make our Sign Up and Log In pa
 ## WEEK 07
 We use the query params to make an URL with the form information on it. Then we use the fetch function to make HTML request with that URL, and use the received data to set it in the Local Storage.
 
-GitHub link: https://mpueblas.github.io/BaSP-M2022-Etapa-1/Semana-06/
+GitHub link: https://github.com/mpueblas/BaSP-M2022-Etapa-1/tree/master/Semana-07
+
 
 ## Martín Pueblas

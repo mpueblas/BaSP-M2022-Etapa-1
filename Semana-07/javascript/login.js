@@ -4,6 +4,7 @@ window.onload = function(){
     var inputs = document.getElementsByClassName('form-inpt');
     var regexMail = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
     var boxGood = document.getElementById('form-good');
+    var boxWrong = document.getElementById('form-wrong');
     var mailValue = document.getElementById('email');
     var passValue = document.getElementById('password');
     var wrongValidation = document.getElementById('form-mssg');
@@ -86,7 +87,7 @@ window.onload = function(){
         e.preventDefault();
         if(formValidation() == true && passValidation() == true){
             boxGood.classList.remove('hide');
-            boxGood.innerHTML = 'mail: ' + mailValue.value + '/ password: ' + passValue.value;
+            boxGood.innerHTML = 'mail: ' + mailValue.value + ' password: ' + passValue.value;
             wrongValidation.classList.add('hide');
             fetch ("https://basp-m2022-api-rest-server.herokuapp.com/login?email=" + inputs[0].value + "&password=" + inputs[1].value)
             .then(function (response) {
@@ -97,16 +98,23 @@ window.onload = function(){
                 if (jsonResponse.success){
                     alert(jsonResponse.msg + "Login successful");
                 } else {
-                    alert("Error" + jsonResponse.msg)
+                    alert(jsonResponse.msg)
                 }
             })
             .catch(function (error){
                 alert("Error: ", error.msg);
             })
-        }else {
-            wrongValidation.classList.remove('hide');
+        }else if(formValidation() == false && passValidation() == true) {
+            boxWrong.classList.remove('hide');
+            boxWrong.innerHTML = 'Error: invalid E-mail. Try again.';    
+        }else if(formValidation() == true && passValidation() == false) {
+            boxWrong.classList.remove('hide');
+            boxWrong.innerHTML = 'Error: invalid password. Try again.';
+        }else  {
+            boxWrong.classList.remove('hide');
+            boxWrong.innerHTML = 'Error: E-mail account and password invalid. Try again.';
         }
     }
 
-    document.getElementById
+
 }

@@ -170,7 +170,7 @@ main{
 .forms-1{
     display:flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 .forms-1 input{
     width:260px;
@@ -198,7 +198,8 @@ main{
     align-items:center;
     justify-content: space-between;
     align-self:center;
-    width:75%;
+    width:86%;
+    margin-left: 7%;
 }
 .button-1{
     display: flex;
@@ -270,6 +271,18 @@ main{
     height: 956pxpx;
 }
 #square-1-login{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-transform: capitalize;
+    background-color: #fff;
+    max-width: 540px;
+    height: 42%;
+    border-radius: 5%;
+    margin-top: 5%;
+}
+#square-1-em{
     display: flex;
     flex-flow: column wrap;
     align-self: center;
@@ -278,14 +291,15 @@ main{
     background-color: #fff;
     width: 93%;
     max-width: 540px;
-    height: 471px;
+    height: 42%;
     border-radius: 5%;
+    margin-top: 5%;
 }
+
 #square-2-login{
     display:flex;
     flex-flow: column wrap;
     align-self: flex-start;
-    justify-content:space-around;
     align-items: center;
     text-align: left;
     border: 1px rgba(0, 0, 0, 1);
@@ -293,7 +307,6 @@ main{
     border-radius: 10%;
     width: 350px;
     height: 956pxpx;
-    margin-top:10%;
 }
 #message, #phonenumber{
     font-family:'Roboto', sans-serif;
@@ -427,7 +440,7 @@ main{
         height: 1150px;
         padding-bottom: 118px;
         padding-left: 0%;
-        margin-left: 22%;
+        margin-left: 0%;
     }
     #aside{
         display:inline-block;

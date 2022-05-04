@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,24 +23,11 @@
         <img class="img-logo-header" src="../assets/Logo.png">
         <a href="./employee-signup.html"><input class="sign-up-button" type="button" name="submit" value="Sign up"></a>
     </header>
-    <aside id="aside">
-        <nav>
-            <div id="shortcuts">Shortcuts</div>
-            <ul>
-                <li class="nav-links"><a class="nav-titles" href="./index.html">Homepage</a></li>
-                <li class="nav-links"><a class="nav-titles" href="#what-is-trackgenix">What is Trackgenix?</a></li>
-                <li class="nav-links"><a class="nav-titles" href="#what-can-i-do">Why choose Trackgenix?</a></li>
-                <li class="nav-links"><a class="nav-titles" href="#about-us">About us</a></li>
-                <li class="nav-links"><a class="nav-titles" href="#get-in-touch">Get in touch</a></li>
-                <li class="nav-links"><a class="nav-titles" href="#">Log in</a></li>
-            </ul>
-        </nav>
-    </aside>
-    <main class="main login-main">
-        <div class="circle">
-            <img src="../assets/Logo.png" class="logo-img">
-        </div>
+    <main id="main">
         <div id="square-1-login" class="square">
+            <div class="circle">
+                <img src="../assets/Logo.png" class="logo-img">
+            </div>
             <div id="square-2-login" class="square">
                 <h2>Log-in</h2>
                 <form id="form-login" class="form-login">
@@ -64,12 +51,21 @@
                             <label for="remember"id="remember-txt" class="form-inpt">Remember me</label>    
                         </div>
                         <div id="form-mssg" class="form-mssg hide">
-                            <p>
-                                Error: E-mail account or password invalid.
+                            <p id="invalid-both" class="hide">
+                                Error: E-mail account and password invalid.
+                                Try again.
+                            </p>
+                            <p id="invalid-email" class="hide">
+                                Error: E-mail account invalid.
+                                Try again.
+                            </p>
+                            <p id="invalid-pass" class="hide">
+                                Error: password invalid.
                                 Try again.
                             </p>
                         </div>
-                        <div id="form-good" class="form-good hide"></div> 
+                        <div id="form-good" class="form-good hide"></div>
+                        <div id="form-wrong" class="form-wrong hide"></div>  
                     </div>
                     <div class="buttons">
                         <a class="button-1" type="#" value="Forgot password?">Forgot password?</a>

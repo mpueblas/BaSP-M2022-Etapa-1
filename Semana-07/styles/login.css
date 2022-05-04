@@ -1,8 +1,8 @@
 .form-gral, .form-d-inpt {
-    width: 100%;
+    width: 78%;
     align-items: flex-start;
     text-align: left;
-}
+} 
 
 .form-inpt:focus {
     border: 3px solid #373867;
@@ -17,6 +17,8 @@
     font-size: 12px;
 }
 .form-mssg {
+    display: flex;
+    flex-direction: column;
     background-color: rgba(170, 206, 152, 0.6);
     display: flex;
     color: #bb2929;
@@ -29,8 +31,14 @@
     align-self: center;
     margin: 5%;
 }
+.form-wrong {
+    background-color: rgba(223, 22, 25, 0.6);
+    display: flex;
+    align-self: center;
+    margin: 5%;
+}
 .hide{
-    visibility: hidden;
+    display: none;
 }
 
 .form-exit-message {
@@ -57,6 +65,16 @@
     margin: 6px 0 25px;
     padding-left: 4%;
 }
+
+#invalid-both{
+    align-self: center;
+}
+#invalid-email{
+    align-self: center;
+}
+#invalid-pass{
+    align-self: center;
+}
 /* Validation styles */
 /*cruz*/
 .form-grp-ok {
@@ -72,11 +90,7 @@
 .frm-grp-wrng .form-inpt {
     border: 2px solid #bb2929;
 }
-@media only screen and (min-width: 768px) {
-    main {
-        margin-left: 260px;
-    }
-}
+
 
 
 
